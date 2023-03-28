@@ -15,7 +15,8 @@ export default function HomePage() {
 					<SocialMenu />
 				</div>
 				<div className={styles["laptop-style"]}>
-					<Image src="/static/images/laptop.png" alt="not-loaded" fill />
+					<Image src="/static/images/laptop3.png" alt="not-loaded" fill />
+					<div className={`${styles["line-1"]}`}>{`console.log("Hello World");`}</div>
 				</div>
 			</div>
 		</div>
