@@ -1,10 +1,35 @@
 .home-page-container {
-	width: 100%;
+	width: calc(100% - 250px);
 	height: 100%;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+	padding-left: 250px;
+	.main-content-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 80px;
+		.about-me-container {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+		.laptop-style {
+			position: relative;
+			width: 400px;
+			height: 400px;
+			filter: brightness(0.7);
+			opacity: 0.3;
+			transition: 325ms;
+
+			&:hover {
+				opacity: 0.7;
+				filter: brightness(0.8);
+			}
+		}
+	}
 	.background-container {
 		width: 100%;
 		height: 100%;
@@ -13,6 +38,8 @@
 		background-size: cover;
 		filter: brightness(0.75);
 		position: fixed;
+		top: 0;
+		left: 0;
 		z-index: -1;
 	}
 }
