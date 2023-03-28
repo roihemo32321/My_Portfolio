@@ -1,0 +1,14 @@
+@font-face {
+	font-family: shareTechMono;
+	src: url("/static/fonts/ShareTechMono-Regular.ttf");
+}
+
+.main-socials-container {
+	display: flex;
+	flex-direction: column;
+	.title-style {
+		font-family: shareTechMono;
+		font-size: 1rem;
+		color: white;
+	}
+}
