@@ -1,0 +1,56 @@
+@font-face {
+	font-family: RoadRadioBold;
+	src: url("/static/fonts/RoadRadio\ Bold.ttf");
+}
+
+.profile-container {
+	padding-left: 250px;
+	.main-titles-container {
+		display: flex;
+		flex-direction: column;
+		.white-title {
+			font-family: RoadRadioBold;
+			color: white;
+			font-size: 6rem;
+		}
+
+		.purple-title {
+			font-family: RoadRadioBold;
+			color: rgb(129, 18, 129);
+			font-size: 6rem;
+			text-shadow: 4px 3px #650b6560;
+		}
+
+		.mini-white-title {
+			font-family: RoadRadioBold;
+			color: white;
+			font-size: 1.5rem;
+		}
+
+		.titles-container {
+			display: flex;
+			gap: 25px;
+		}
+
+		.sub-titles-container {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			.developer-titles-container {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+				.mini-titles-container {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					.line {
+						border: 1px solid white;
+						width: 75px;
+						height: 2px;
+					}
+				}
+			}
+		}
+	}
+}

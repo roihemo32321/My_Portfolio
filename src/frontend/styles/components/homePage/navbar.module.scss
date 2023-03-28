@@ -1,0 +1,20 @@
+@font-face {
+	font-family: shareTechMono;
+	src: url("/static/fonts/ShareTechMono-Regular.ttf");
+}
+
+.navbar-container {
+	width: fit-content;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	padding-left: 250px;
+	gap: 100px;
+	.title-style {
+		font-family: shareTechMono;
+		font-size: 1.15rem;
+		color: white;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+}
