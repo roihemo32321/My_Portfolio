@@ -1,3 +1,4 @@
+import About from "@/frontend/components/aboutMe/about";
 import HomePage from "@/frontend/components/homePage/homePage";
 import Head from "next/head";
 import styles from "../frontend/styles/index.module.scss";
@@ -11,6 +12,7 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<HomePage />
+				<About />
 			</main>
 		</>
 	);

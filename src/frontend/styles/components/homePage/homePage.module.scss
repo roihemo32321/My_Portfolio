@@ -4,53 +4,67 @@
 }
 
 .home-page-container {
-	width: calc(100% - 250px);
-	height: 100%;
-	z-index: 1;
 	display: flex;
+	width: 100%;
+	height: 100%;
 	flex-direction: column;
-	gap: 30px;
-	padding-left: 250px;
+	gap: 35px;
+	z-index: 1;
 	.main-content-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 120px;
-		.about-me-container {
+		gap: 70px;
+		.top-main-container {
+			display: flex;
+			gap: 125px;
+			.about-me-container {
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+			}
+			.laptop-style {
+				position: relative;
+				width: 550px;
+				height: 550px;
+				filter: brightness(0.7);
+				opacity: 0.3;
+				transition: 325ms;
+
+				.line-1 {
+					position: absolute;
+					top: 17.5%;
+					left: 18%;
+					color: white;
+					width: 0;
+					border-right: 2px solid rgba(255, 255, 255, 0.75);
+					white-space: nowrap;
+					overflow: hidden;
+					font-size: 1.3rem;
+					font-family: shareTechMono;
+					user-select: none;
+					animation: blinkTextCursor 500ms steps(27) infinite normal;
+				}
+
+				&:hover {
+					opacity: 0.7;
+					filter: brightness(0.8);
+				}
+
+				&:hover .line-1 {
+					animation: typewriter 1.25s steps(27) forwards;
+				}
+			}
+		}
+		.bottom-main-container {
 			display: flex;
 			flex-direction: column;
-			gap: 15px;
-		}
-		.laptop-style {
-			position: relative;
-			width: 350px;
-			height: 350px;
-			filter: brightness(0.7);
-			opacity: 0.3;
-			transition: 325ms;
-
-			.line-1 {
-				position: absolute;
-				top: 17.5%;
-				left: 18%;
+			align-items: center;
+			gap: 25px;
+			.copyright-style {
+				font-size: 0.9rem;
 				color: white;
-				width: 0;
-				border-right: 2px solid rgba(255, 255, 255, 0.75);
-				white-space: nowrap;
-				overflow: hidden;
-				font-size: 0.75rem;
-				font-family: shareTechMono;
-				user-select: none;
-				animation: blinkTextCursor 500ms steps(27) infinite normal;
-			}
-
-			&:hover {
-				opacity: 0.7;
-				filter: brightness(0.8);
-			}
-
-			&:hover .line-1 {
-				animation: typewriter 3s steps(27) forwards;
+				font-family: RoadRadioBold;
 			}
 		}
 	}
@@ -73,9 +87,10 @@
 		width: 0;
 	}
 	to {
-		width: 50%;
+		width: 55%;
 	}
 }
+
 @keyframes blinkTextCursor {
 	from {
 		border-right-color: rgba(255, 255, 255, 0.75);

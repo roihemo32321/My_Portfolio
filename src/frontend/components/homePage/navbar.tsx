@@ -1,20 +1,26 @@
+import Link from "next/link";
 import styles from "../../styles/components/homePage/navbar.module.scss";
 
 const navOptions = [
 	{
-		title: "Main page",
+		title: "Home",
+		link: "home",
 	},
 	{
 		title: "About me",
+		link: "aboutMe",
 	},
 	{
 		title: "Skills",
+		link: "skills",
 	},
 	{
 		title: "Timelines",
+		link: "timeLines",
 	},
 	{
 		title: "Contacts",
+		link: "contacts",
 	},
 ];
 
@@ -23,9 +29,9 @@ export default function Navbar() {
 		<div className={styles["navbar-container"]}>
 			{navOptions.map((val) => {
 				return (
-					<div className={styles["title-style"]} key={val.title}>
+					<Link className={styles["title-style"]} key={val.title} href={`/#${val.link}`}>
 						{val.title}
-					</div>
+					</Link>
 				);
 			})}
 		</div>

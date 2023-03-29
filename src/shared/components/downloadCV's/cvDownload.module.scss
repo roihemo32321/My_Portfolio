@@ -1,0 +1,28 @@
+.cv-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	padding: 15px;
+	gap: 15px;
+	border-radius: 10px;
+	background-color: #952995;
+	outline: none;
+	text-decoration: none;
+	border: 1.5px solid white;
+	filter: brightness(0.8);
+	transition: filter 325ms;
+	&:hover {
+		filter: brightness(1);
+	}
+	.title-style {
+		font-size: 1.3rem;
+		font-family: shareTechMono;
+		color: white;
+	}
+	.icon-container {
+		width: 30px;
+		height: 30px;
+		color: white;
+	}
+}

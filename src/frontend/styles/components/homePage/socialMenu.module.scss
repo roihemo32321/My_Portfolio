@@ -9,18 +9,18 @@
 	gap: 15px;
 	.title-style {
 		font-family: shareTechMono;
-		font-size: 1.1rem;
+		font-size: 1.5rem;
 		color: white;
 		text-transform: uppercase;
 	}
 	.social-options {
 		display: flex;
 		width: fit-content;
-		gap: 10px;
+		gap: 20px;
 		.option-container {
 			cursor: pointer;
-			width: 45px;
-			height: 45px;
+			width: 55px;
+			height: 55px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -32,8 +32,8 @@
 				filter: brightness(0.7);
 			}
 			.icon-style {
-				width: 27.5px;
-				height: 27.5px;
+				width: 30px;
+				height: 30px;
 				color: white;
 			}
 		}
