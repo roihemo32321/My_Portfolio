@@ -1,0 +1,61 @@
+.single-skill-container {
+	width: 20%;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	border-radius: 5px;
+	background-color: #3d3e42;
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	.svg-style {
+		width: 45px;
+		height: 45px;
+	}
+	.title-style {
+		font-size: 1rem;
+		color: rgb(205, 205, 205);
+		font-family: shareTechMono;
+	}
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+	transition: all 1s;
+	&:nth-child(2) {
+		transition-delay: 100ms;
+	}
+
+	&:nth-child(3) {
+		transition-delay: 150ms;
+	}
+
+	&:nth-child(4) {
+		transition-delay: 200ms;
+	}
+
+	&:nth-child(5) {
+		transition-delay: 250ms;
+	}
+
+	&:nth-child(6) {
+		transition-delay: 300ms;
+	}
+
+	&:nth-child(7) {
+		transition-delay: 350ms;
+	}
+
+	&:nth-child(8) {
+		transition-delay: 400ms;
+	}
+
+	&:nth-child(9) {
+		transition-delay: 450ms;
+	}
+}
