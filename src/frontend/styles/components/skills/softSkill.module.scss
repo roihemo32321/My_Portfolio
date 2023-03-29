@@ -1,0 +1,83 @@
+.soft-skill-container {
+	width: fit-content;
+	height: 50px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+	gap: 10px;
+	background-color: #222222;
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateY(-100%);
+	.square-style {
+		width: 7px;
+		height: 7px;
+		border-radius: 1px;
+		background-color: white;
+	}
+	.title-style {
+		font-size: 1rem;
+		font-family: RoadRadioBold;
+		color: white;
+	}
+}
+
+.show-animation {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateY(0);
+	transition: all 1s;
+	&:nth-child(2) {
+		transition-delay: 200ms;
+	}
+
+	&:nth-child(3) {
+		transition-delay: 250ms;
+	}
+
+	&:nth-child(4) {
+		transition-delay: 300ms;
+	}
+
+	&:nth-child(5) {
+		transition-delay: 350ms;
+	}
+
+	&:nth-child(6) {
+		transition-delay: 400ms;
+	}
+
+	&:nth-child(7) {
+		transition-delay: 450ms;
+	}
+
+	&:nth-child(8) {
+		transition-delay: 500ms;
+	}
+
+	&:nth-child(9) {
+		transition-delay: 550ms;
+	}
+
+	&:nth-child(10) {
+		transition-delay: 600ms;
+	}
+
+	&:nth-child(11) {
+		transition-delay: 650ms;
+	}
+
+	&:nth-child(12) {
+		transition-delay: 700ms;
+	}
+
+	&:nth-child(13) {
+		transition-delay: 750ms;
+	}
+
+	&:nth-child(14) {
+		transition-delay: 800ms;
+	}
+}

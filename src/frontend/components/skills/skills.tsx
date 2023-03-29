@@ -11,6 +11,7 @@ import RestIcon from "./svgs/restApiIcon";
 import MySqlIcon from "./svgs/mySqlIcon";
 import useElementOnScreen from "@/shared/libs/hooks/useElementOnScreen";
 import { useRef } from "react";
+import SoftSkill from "./softSkill";
 
 const skillsSvgs = [
 	{ svg: <JavaScriptIcon />, title: "JavaScript" },
@@ -24,21 +25,51 @@ const skillsSvgs = [
 	{ svg: <MySqlIcon />, title: "MySql" },
 ];
 
+const softSkills = [
+	"Communication",
+	"Teamwork",
+	"Problem-solving",
+	"Adaptability",
+	"Self-learning",
+	"Self-awareness",
+	"Accountability",
+	"Time management",
+	"Emotional Intelligence",
+	"Patience",
+	"Open-Mindedness",
+	"Work ethic",
+	"Organization",
+	"Mentorship",
+];
+
 export default function Skills() {
-	const animationRef = useRef<HTMLDivElement>(null);
-	const animationOnScreen = useElementOnScreen(animationRef);
+	const mainSkillanimationRef = useRef<HTMLDivElement>(null);
+	const softSkillAnimationRef = useRef<HTMLDivElement>(null);
+	const mainAnimationOnScreen = useElementOnScreen(mainSkillanimationRef);
+	const softAnimationOnScreen = useElementOnScreen(softSkillAnimationRef);
 
 	return (
 		<div className={styles["skills-main-container"]} id="skills">
 			<div className={styles["background-container"]} />
 			<div className={styles["main-skills-container"]}>
-				<div className={`${styles["skills-title"]} ${animationOnScreen ? styles["show-animation"] : ""}`} ref={animationRef}>
+				<div className={`${styles["skills-title"]} ${mainAnimationOnScreen ? styles["show-animation"] : ""}`} ref={mainSkillanimationRef}>
 					<span className={styles["main-span"]}>Main</span>
 					<span className={styles["skills-span"]}>Skills</span>
 				</div>
 				<div className={styles["skills-container"]}>
 					{skillsSvgs.map((val) => {
 						return <SingleSkill key={val.title} svgComponent={val.svg} title={val.title} />;
+					})}
+				</div>
+			</div>
+			<div className={styles["soft-skills-container"]}>
+				<div className={`${styles["soft-title"]} ${softAnimationOnScreen ? styles["title-animation"] : ""}`} ref={softSkillAnimationRef}>
+					<span className={styles["soft-span"]}>Soft</span>
+					<span className={styles["skills-span"]}>Skills</span>
+				</div>
+				<div className={styles["skills-container"]}>
+					{softSkills.map((val, index) => {
+						return <SoftSkill key={index} title={val} />;
 					})}
 				</div>
 			</div>

@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	gap: 85px;
 	padding-top: 25px;
 	.background-container {
 		width: 100%;
@@ -39,7 +40,7 @@
 			opacity: 1;
 			transform: translateX(0);
 			filter: blur(0);
-			transition: all 325ms, filter 500ms;
+			transition: all 500ms;
 		}
 		.skills-container {
 			width: 550px;
@@ -47,6 +48,39 @@
 			justify-content: center;
 			gap: 20px;
 			flex-wrap: wrap;
+		}
+	}
+
+	.soft-skills-container {
+		width: 75%;
+		display: flex;
+		gap: 15px;
+		flex-direction: column;
+		padding-left: 250px;
+		.soft-title {
+			display: flex;
+			gap: 20px;
+			font-size: 6rem;
+			color: white;
+			font-family: RoadRadioBold;
+			opacity: 0;
+			transform: translateX(-100%);
+			filter: blur(5px);
+			.soft-span {
+				color: #9e2a9e;
+				text-shadow: 3px 3px #580f5860;
+			}
+		}
+		.title-animation {
+			opacity: 1;
+			transform: translateX(0);
+			filter: blur(0);
+			transition: all 500ms;
+		}
+		.skills-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
 		}
 	}
 }
