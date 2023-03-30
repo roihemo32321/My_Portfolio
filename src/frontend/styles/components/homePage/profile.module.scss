@@ -49,7 +49,35 @@
 	}
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1200px) {
+	.profile-container {
+		.main-titles-container {
+			.white-title,
+			.purple-title {
+				font-size: 5rem;
+			}
+			.mini-white-title {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.profile-container {
+		.main-titles-container {
+			.white-title,
+			.purple-title {
+				font-size: 5rem;
+			}
+			.mini-white-title {
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-height: 800px) {
 	.profile-container {
 		.main-titles-container {
 			.white-title,
