@@ -11,7 +11,7 @@
 	.social-options {
 		display: flex;
 		width: fit-content;
-		gap: 20px;
+		gap: 10px;
 		.option-container {
 			cursor: pointer;
 			width: 55px;
@@ -30,6 +30,24 @@
 				width: 30px;
 				height: 30px;
 				color: white;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1450px) {
+	.main-socials-container {
+		.title-style {
+			font-size: 1.2rem;
+		}
+		.social-options {
+			.option-container {
+				width: 45px;
+				height: 45px;
+				.icon-style {
+					width: 25px;
+					height: 25px;
+				}
 			}
 		}
 	}

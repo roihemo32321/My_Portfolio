@@ -37,3 +37,18 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 1450px) {
+	.single-skill-container {
+		width: 20%;
+		height: 70px;
+		gap: 10px;
+		.svg-style {
+			width: 30px;
+			height: 30px;
+		}
+		.title-style {
+			font-size: 0.75rem;
+		}
+	}
+}

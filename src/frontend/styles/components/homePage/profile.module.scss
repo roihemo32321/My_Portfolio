@@ -48,3 +48,17 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 1450px) {
+	.profile-container {
+		.main-titles-container {
+			.white-title,
+			.purple-title {
+				font-size: 5rem;
+			}
+			.mini-white-title {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}

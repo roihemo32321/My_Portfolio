@@ -36,3 +36,16 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 1450px) {
+	.soft-skill-container {
+		height: 30px;
+		.square-style {
+			width: 5px;
+			height: 5px;
+		}
+		.title-style {
+			font-size: 0.85rem;
+		}
+	}
+}
