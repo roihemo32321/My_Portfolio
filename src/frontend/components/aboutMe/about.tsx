@@ -22,8 +22,8 @@ export default function About() {
 			<div className={styles["seperator-line"]} />
 			<div className={`${styles["right-container"]} ${rightSideOnScreen ? styles["fade-left"] : ""}`} ref={rightSideRef}>
 				<p>
-					Hello, my name is Roie Hemo, I am a Full Stack Developer at Israel Defense Forces. I am working on different E2E websites with a group of 7
-					full stack developers. Our products handle plenty of data, and as a consequence, I had to work on optimizing the system to make it more
+					Hello, my name is Roie Hemo, I am a Full Stack Developer at the Israel Defense Forces. I am working on different E2E websites with a group
+					of 7 full stack developers. Our products handle important data, and as a consequence, I had to work on optimizing the system to make it more
 					efficient.
 				</p>
 				<p>
@@ -31,7 +31,7 @@ export default function About() {
 					work, I enjoy studying technologies and deepening my specializations. I love writing code and being part of a group that strives to develop
 					impactful projects.
 				</p>
-				<p>Besides being a developer I also love soccer, gaming, and having fun with my friends.</p>
+				<p>Besides being a developer I also love soccer, gaming, and hanging out with my friends.</p>
 			</div>
 		</div>
 	);

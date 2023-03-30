@@ -1,0 +1,28 @@
+.experience-container {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.titles-container {
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		.main-title {
+			font-size: 2.5rem;
+			font-family: RoadRadioBold;
+		}
+		.sub-title {
+			color: #9e2a9e;
+			text-shadow: 1px 1px #580f5860;
+			font-family: RoadRadioBold;
+		}
+	}
+
+	.resume-sections {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+}

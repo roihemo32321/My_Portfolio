@@ -1,6 +1,16 @@
 *,
 *::before,
 *::after {
+	@font-face {
+		font-family: shareTechMono;
+		src: url("/static/fonts/ShareTechMono-Regular.ttf");
+	}
+
+	@font-face {
+		font-family: RoadRadioBold;
+		src: url("/static/fonts/RoadRadio\ Bold.ttf");
+	}
+
 	box-sizing: border-box;
 }
 

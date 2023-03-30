@@ -15,8 +15,8 @@ const navOptions = [
 		link: "skills",
 	},
 	{
-		title: "Timelines",
-		link: "timeLines",
+		title: "Resume",
+		link: "resume",
 	},
 	{
 		title: "Contacts",

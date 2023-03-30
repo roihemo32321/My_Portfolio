@@ -9,6 +9,7 @@ import SassIcon from "./svgs/sassIcon";
 import GraphQLIcon from "./svgs/graphQL";
 import RestIcon from "./svgs/restApiIcon";
 import MySqlIcon from "./svgs/mySqlIcon";
+import PythonIcon from "./svgs/python";
 import useElementOnScreen from "@/shared/libs/hooks/useElementOnScreen";
 import { useRef } from "react";
 import SoftSkill from "./softSkill";
@@ -23,6 +24,7 @@ const skillsSvgs = [
 	{ svg: <GraphQLIcon />, title: "GraphQL" },
 	{ svg: <RestIcon />, title: "Rest API" },
 	{ svg: <MySqlIcon />, title: "MySql" },
+	{ svg: <PythonIcon />, title: "Python" },
 ];
 
 const softSkills = [

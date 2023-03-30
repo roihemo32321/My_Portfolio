@@ -27,35 +27,13 @@
 	filter: blur(0);
 	transform: translateX(0);
 	transition: all 1s;
-	&:nth-child(2) {
-		transition-delay: 100ms;
+	&:nth-child(n) {
+		transition-delay: calc(n * 50) ms;
 	}
 
-	&:nth-child(3) {
-		transition-delay: 150ms;
-	}
-
-	&:nth-child(4) {
-		transition-delay: 200ms;
-	}
-
-	&:nth-child(5) {
-		transition-delay: 250ms;
-	}
-
-	&:nth-child(6) {
-		transition-delay: 300ms;
-	}
-
-	&:nth-child(7) {
-		transition-delay: 350ms;
-	}
-
-	&:nth-child(8) {
-		transition-delay: 400ms;
-	}
-
-	&:nth-child(9) {
-		transition-delay: 450ms;
+	@for $i from 2 through 10 {
+		&:nth-child(#{$i}) {
+			transition-delay: calc(#{$i} * 50ms);
+		}
 	}
 }

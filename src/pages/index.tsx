@@ -1,6 +1,7 @@
 import About from "@/frontend/components/aboutMe/about";
 import HomePage from "@/frontend/components/homePage/homePage";
 import Skills from "@/frontend/components/skills/skills";
+import Resume from "@/frontend/components/resume/resume";
 import Head from "next/head";
 import styles from "../frontend/styles/index.module.scss";
 
@@ -15,6 +16,7 @@ export default function Home() {
 				<HomePage />
 				<About />
 				<Skills />
+				<Resume />
 			</main>
 		</>
 	);
