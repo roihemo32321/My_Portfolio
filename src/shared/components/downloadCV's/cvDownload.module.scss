@@ -26,3 +26,16 @@
 		color: white;
 	}
 }
+
+@media screen and (max-width: 650px) {
+	.cv-btn {
+		width: 250px;
+		.title-style {
+			font-size: 1rem;
+		}
+		.icon-container {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

@@ -99,6 +99,24 @@
 	}
 }
 
+@media screen and (max-height: 800px) {
+	.home-page-container {
+		gap: 30px;
+		.main-content-container {
+			gap: 20px;
+			.top-main-container {
+				.laptop-style {
+					width: 350px;
+					height: 350px;
+					.line-1 {
+						font-size: 0.82rem;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	.home-page-container {
 		.main-content-container {
@@ -124,7 +142,6 @@
 
 @media screen and (max-width: 992px) {
 	.home-page-container {
-		height: 100%;
 		.main-content-container {
 			gap: 60px;
 			.top-main-container {
@@ -132,10 +149,11 @@
 				align-items: center;
 				flex-direction: column;
 				.about-me-container {
-					width: 80%;
+					width: 100%;
 					flex-direction: row;
 					align-items: center;
-					justify-content: space-evenly;
+					justify-content: center;
+					gap: 115px;
 				}
 				.laptop-style {
 					width: 350px;
@@ -156,18 +174,74 @@
 	}
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 780px) {
 	.home-page-container {
-		gap: 30px;
 		.main-content-container {
-			gap: 20px;
+			gap: 140px;
 			.top-main-container {
+				gap: 70px;
+				.about-me-container {
+					gap: 70px;
+				}
 				.laptop-style {
-					width: 350px;
-					height: 350px;
-					.line-1 {
-						font-size: 0.82rem;
-					}
+					width: 300px;
+					height: 300px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.home-page-container {
+		.main-content-container {
+			gap: 0px;
+			.top-main-container {
+				gap: 25px;
+				.about-me-container {
+					gap: 40px;
+					flex-direction: column;
+				}
+				.laptop-style {
+					width: 250px;
+					height: 250px;
+				}
+			}
+			.bottom-main-container {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.home-page-container {
+		.main-content-container {
+			.top-main-container {
+				gap: 40px;
+				.about-me-container {
+					gap: 60px;
+				}
+				.laptop-style {
+					width: 200px;
+					height: 200px;
+				}
+			}
+		}
+	}
+}
+
+// Iphone X
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+	.home-page-container {
+		.main-content-container {
+			.top-main-container {
+				.about-me-container {
+					gap: 50px;
+				}
+				.laptop-style {
+					width: 250px;
+					height: 250px;
 				}
 			}
 		}

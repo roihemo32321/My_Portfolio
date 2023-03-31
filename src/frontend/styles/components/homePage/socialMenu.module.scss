@@ -52,3 +52,22 @@
 		}
 	}
 }
+
+@media screen and (max-width: 650px) {
+	.main-socials-container {
+		align-items: center;
+		.title-style {
+			font-size: 1rem;
+		}
+		.social-options {
+			.option-container {
+				width: 35px;
+				height: 35px;
+				.icon-style {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+}

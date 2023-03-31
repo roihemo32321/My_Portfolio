@@ -49,6 +49,20 @@
 	}
 }
 
+@media only screen and (max-height: 800px) {
+	.profile-container {
+		.main-titles-container {
+			.white-title,
+			.purple-title {
+				font-size: 5rem;
+			}
+			.mini-white-title {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	.profile-container {
 		.main-titles-container {
@@ -68,7 +82,7 @@
 		.main-titles-container {
 			.white-title,
 			.purple-title {
-				font-size: 5rem;
+				font-size: 4.5rem;
 			}
 			.mini-white-title {
 				font-size: 1.1rem;
@@ -77,15 +91,66 @@
 	}
 }
 
-@media only screen and (max-height: 800px) {
+@media screen and (max-width: 780px) {
 	.profile-container {
 		.main-titles-container {
 			.white-title,
 			.purple-title {
-				font-size: 5rem;
+				font-size: 4rem;
 			}
 			.mini-white-title {
-				font-size: 1.25rem;
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.profile-container {
+		.main-titles-container {
+			.white-title,
+			.purple-title {
+				justify-content: center;
+				display: flex;
+				font-size: 3.5rem;
+			}
+			.mini-white-title {
+				font-size: 1rem;
+			}
+			.titles-container {
+				justify-content: center;
+			}
+			.sub-titles-container {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.profile-container {
+		.main-titles-container {
+			.white-title,
+			.purple-title {
+				font-size: 2.5rem;
+			}
+			.mini-white-title {
+				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+// Iphone X
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+	.profile-container {
+		.main-titles-container {
+			.white-title,
+			.purple-title {
+				font-size: 3.5rem;
+			}
+			.mini-white-title {
+				font-size: 1rem;
 			}
 		}
 	}

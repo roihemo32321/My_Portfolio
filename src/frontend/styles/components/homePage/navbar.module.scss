@@ -9,33 +9,45 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 100px;
-	.title-style {
-		font-family: shareTechMono;
-		font-size: 1.5rem;
+	position: relative;
+	.menu-icon {
+		width: 30px;
+		height: 30px;
 		color: white;
-		cursor: pointer;
-		text-transform: uppercase;
-		position: relative;
-		opacity: 0.8;
-		transition: 325ms opacity;
-		text-decoration: none;
-		&:hover {
-			opacity: 1;
-			&::after {
-				width: 100%;
+		position: absolute;
+		right: 0px;
+		display: none;
+	}
+	.nav-options-container {
+		display: flex;
+		gap: 100px;
+		.link-style {
+			font-family: shareTechMono;
+			font-size: 1.5rem;
+			color: white;
+			cursor: pointer;
+			text-transform: uppercase;
+			position: relative;
+			opacity: 0.8;
+			transition: 325ms opacity;
+			text-decoration: none;
+			&:hover {
+				opacity: 1;
+				&::after {
+					width: 100%;
+				}
 			}
-		}
 
-		&:after {
-			content: "";
-			position: absolute;
-			width: 0%;
-			height: 2.5px;
-			bottom: -5px;
-			left: 0;
-			transition: 325ms ease-in-out;
-			background-color: white;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 0%;
+				height: 2.5px;
+				bottom: -5px;
+				left: 0;
+				transition: 325ms ease-in-out;
+				background-color: white;
+			}
 		}
 	}
 }
@@ -43,9 +55,70 @@
 @media only screen and (max-height: 800px) {
 	.navbar-container {
 		height: 75px;
-		gap: 75px;
-		.title-style {
-			font-size: 1rem;
+		.nav-options-container {
+			gap: 75px;
+			.link-style {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.navbar-container {
+		width: 100%;
+		height: 50px;
+		z-index: 1000;
+		.nav-options-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			right: -100%;
+			background: rgb(43, 43, 43);
+			transition: all 500ms ease-in-out;
+			.link-style {
+				font-size: 2rem;
+				transform: translateX(1000%);
+				transition: all 325ms;
+				&:nth-child(2) {
+					transition-delay: 150ms;
+				}
+				&:nth-child(3) {
+					transition-delay: 250ms;
+				}
+				&:nth-child(4) {
+					transition-delay: 350ms;
+				}
+				&:nth-child(5) {
+					transition-delay: 450ms;
+				}
+			}
+		}
+
+		.show-responsive-nav {
+			transform: translateX(-100%);
+
+			.link-style {
+				transform: translateX(0);
+			}
+		}
+		.menu-icon {
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.navbar-container {
+		height: fit-content;
+		.menu-icon {
+			width: 25px;
+			height: 25px;
 		}
 	}
 }
