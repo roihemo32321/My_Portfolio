@@ -37,7 +37,7 @@
 	}
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (height <= 800px) {
 	.soft-skill-container {
 		height: 30px;
 		.square-style {
@@ -46,6 +46,41 @@
 		}
 		.title-style {
 			font-size: 0.85rem;
+		}
+	}
+}
+
+@media (width <= 1200px) {
+	.soft-skill-container {
+		height: fit-content;
+	}
+}
+
+@media (width <= 650px) {
+	.soft-skill-container {
+		padding: 5px;
+		.square-style {
+			width: 5px;
+			height: 5px;
+		}
+		.title-style {
+			font-size: 0.9rem;
+		}
+	}
+}
+
+@media (width <= 385px) {
+	.soft-skill-container {
+		.title-style {
+			font-size: 0.75rem;
+		}
+	}
+}
+
+@media (width <= 280px) {
+	.soft-skill-container {
+		.title-style {
+			font-size: 0.55rem;
 		}
 	}
 }

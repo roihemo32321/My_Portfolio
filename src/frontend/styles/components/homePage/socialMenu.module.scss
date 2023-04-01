@@ -35,7 +35,7 @@
 	}
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (height <=800px) {
 	.main-socials-container {
 		.title-style {
 			font-size: 1.2rem;
@@ -53,7 +53,7 @@
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (width <= 650px) {
 	.main-socials-container {
 		align-items: center;
 		.title-style {

@@ -96,7 +96,7 @@
 	}
 }
 
-@media only screen and (max-height: 800px) {
+@media (height <= 800px) {
 	.about-container {
 		.left-container {
 			gap: 50px;
@@ -109,7 +109,7 @@
 	}
 }
 
-@media only screen and (max-width: 992px) {
+@media (width <= 992px) {
 	.about-container {
 		flex-direction: column;
 		gap: 50px;
@@ -131,7 +131,7 @@
 	}
 }
 
-@media only screen and (max-width: 780px) {
+@media (width <= 780px) {
 	.about-container {
 		.right-container {
 			width: 80%;
@@ -142,7 +142,7 @@
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media (width <= 450px) {
 	.about-container {
 		gap: 20px;
 		.left-container {
@@ -156,46 +156,15 @@
 	}
 }
 
-/* iphone 12 Pro Max */
-@media only screen and (min-device-width: 428px) and (max-device-height: 926px) {
-	.about-container {
-		gap: 45px;
-		.right-container {
-			p {
-				font-size: 1.05rem;
-			}
-		}
-	}
-}
+// Mobile with special viewports such as s23, Iphone 13/12 and more.
 
-/* iphone XS Max, 11 Pro Max */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) {
+@media (width <= 450px) and (800px <= height <= 950px) {
 	.about-container {
-		.right-container {
-			p {
-				font-size: 0.95rem;
-			}
-		}
-	}
-}
+		gap: 20px;
 
-/* iphone 12, 12 Pro */
-@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-	.about-container {
 		.right-container {
 			p {
 				font-size: 1rem;
-			}
-		}
-	}
-}
-
-/* iphone X , XS, 11 Pro, 12 Mini */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-	.about-container {
-		.right-container {
-			p {
-				font-size: 0.9rem;
 			}
 		}
 	}

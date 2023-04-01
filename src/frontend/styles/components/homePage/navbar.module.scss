@@ -52,7 +52,7 @@
 	}
 }
 
-@media only screen and (max-height: 800px) {
+@media (height <= 800px) {
 	.navbar-container {
 		height: 75px;
 		.nav-options-container {
@@ -64,7 +64,7 @@
 	}
 }
 
-@media only screen and (max-width: 992px) {
+@media (width <= 992px) {
 	.navbar-container {
 		width: 100%;
 		height: 50px;
@@ -113,12 +113,28 @@
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media (width <= 650px) {
 	.navbar-container {
 		height: fit-content;
 		.menu-icon {
 			width: 25px;
 			height: 25px;
+		}
+	}
+}
+
+// Mobile.
+
+@media (width <= 450px) {
+	.navbar-container {
+		.nav-options-container {
+			.link-style {
+				font-size: 1.2rem;
+			}
+		}
+		.menu-icon {
+			width: 20px;
+			height: 20px;
 		}
 	}
 }

@@ -52,7 +52,6 @@ export default function Skills() {
 
 	return (
 		<div className={styles["skills-main-container"]} id="skills">
-			{/* <div className={styles["background-style"]} /> */}
 			<div className={styles["background-container"]} />
 			<div className={styles["main-skills-container"]}>
 				<div className={`${styles["skills-title"]} ${mainAnimationOnScreen ? styles["show-animation"] : ""}`} ref={mainSkillanimationRef}>

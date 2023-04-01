@@ -27,7 +27,7 @@
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (width <= 450px) {
 	.cv-btn {
 		width: 150px;
 		padding: 12.5px;

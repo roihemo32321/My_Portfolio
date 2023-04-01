@@ -211,6 +211,8 @@
 	}
 }
 
+// Mobiles.
+
 @media (width <= 380px) {
 	.home-page-container {
 		.main-content-container {
@@ -228,14 +230,13 @@
 	}
 }
 
-/* iphones */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2),
-	only screen and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3),
-	only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+// Mobile with special viewports such as s23, Iphone 13/12 and more.
+
+@media (width <= 450px) and (800px <= height <= 950px) {
 	.home-page-container {
 		.main-content-container {
 			.top-main-container {
-				gap: 70px;
+				gap: 75px;
 				.laptop-style {
 					width: 250px;
 					height: 250px;
@@ -245,13 +246,9 @@
 	}
 }
 
-/* iphone 6+, 6s+, 7+, 8+ */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+// Tablets such as Ipad and more.
+
+@media (700px <= width <= 1100px) and (700px <= height <= 1400px) {
 	.home-page-container {
-		.main-content-container {
-			.top-main-container {
-				gap: 50px;
-			}
-		}
 	}
 }
