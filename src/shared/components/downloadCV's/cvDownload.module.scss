@@ -27,15 +27,29 @@
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 450px) {
 	.cv-btn {
-		width: 250px;
+		width: 150px;
+		padding: 12.5px;
 		.title-style {
-			font-size: 1rem;
+			font-size: 0.8rem;
 		}
 		.icon-container {
-			width: 20px;
-			height: 20px;
+			width: 15px;
+			height: 15px;
+		}
+	}
+}
+
+/* iphone XR, 11 */
+/* iphone 12, 12 Pro */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+	only screen and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+	.cv-btn {
+		width: 200px;
+		padding: 15px;
+		.title-style {
+			font-size: 1rem;
 		}
 	}
 }

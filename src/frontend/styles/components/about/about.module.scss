@@ -49,7 +49,7 @@
 			.about-title,
 			.me-title {
 				font-family: RoadRadioBold;
-				font-size: 8rem;
+				font-size: clamp(4rem, 5vw + 1rem, 8rem); // Use clamp for headers and more.
 			}
 			.about-title {
 				color: black;
@@ -65,9 +65,8 @@
 
 	.seperator-line {
 		width: 3px;
-		height: 70%;
-		background-color: rgb(172, 170, 170);
-		opacity: 0.4;
+		height: 80%;
+		background-color: rgb(158, 42, 158, 0.2);
 	}
 
 	.right-container {
@@ -101,16 +100,102 @@
 	.about-container {
 		.left-container {
 			gap: 50px;
-			.titles-container {
-				.about-title,
-				.me-title {
-					font-size: 5rem;
-				}
-			}
 		}
 		.right-container {
 			p {
 				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.about-container {
+		flex-direction: column;
+		gap: 50px;
+		.left-container {
+			gap: 50px;
+			.titles-container {
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		.seperator-line {
+			display: none;
+		}
+
+		.right-container {
+			width: 70%;
+		}
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.about-container {
+		.right-container {
+			width: 80%;
+			p {
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.about-container {
+		gap: 20px;
+		.left-container {
+			gap: 15px;
+		}
+		.right-container {
+			p {
+				font-size: 0.7rem;
+			}
+		}
+	}
+}
+
+/* iphone 12 Pro Max */
+@media only screen and (min-device-width: 428px) and (max-device-height: 926px) {
+	.about-container {
+		gap: 45px;
+		.right-container {
+			p {
+				font-size: 1.05rem;
+			}
+		}
+	}
+}
+
+/* iphone XS Max, 11 Pro Max */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) {
+	.about-container {
+		.right-container {
+			p {
+				font-size: 0.95rem;
+			}
+		}
+	}
+}
+
+/* iphone 12, 12 Pro */
+@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+	.about-container {
+		.right-container {
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+/* iphone X , XS, 11 Pro, 12 Mini */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.about-container {
+		.right-container {
+			p {
+				font-size: 0.9rem;
 			}
 		}
 	}
