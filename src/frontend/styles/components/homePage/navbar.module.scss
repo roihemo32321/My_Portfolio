@@ -83,8 +83,8 @@
 			transition: all 500ms ease-in-out;
 			.link-style {
 				font-size: 2rem;
-				transform: translateX(1000%);
-				transition: all 325ms;
+				transform: translateX(20rem);
+				transition: all 500ms;
 				&:nth-child(2) {
 					transition-delay: 150ms;
 				}
