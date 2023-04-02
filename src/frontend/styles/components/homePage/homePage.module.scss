@@ -26,8 +26,9 @@
 			}
 			.laptop-style {
 				position: relative;
-				width: 25rem;
-				height: 20rem;
+				width: clamp(14rem, 10vw + 10rem, 30rem);
+				height: 30vh;
+				max-height: 70%;
 				.laptop-image {
 					filter: invert(0.8);
 				}
@@ -39,7 +40,7 @@
 					border-right: 2px solid rgba(255, 255, 255, 0.75);
 					white-space: nowrap;
 					overflow: hidden;
-					font-size: 1em;
+					font-size: clamp(0.55rem, 0.5vw + 0.2rem, 1rem);
 					font-family: cascadia;
 					user-select: none;
 					animation: typing-animation 7s infinite linear;
@@ -95,7 +96,7 @@
 	14%,
 	28% {
 		border-right-color: rgba(255, 255, 255, 0.75);
-		width: 0%;
+		max-width: 0%;
 	}
 
 	7%,
@@ -104,7 +105,7 @@
 	}
 
 	78% {
-		width: 59%;
+		max-width: 60%; // Telling the text to fit-content by setting the max-width to 60%.
 	}
 
 	85%,
@@ -122,37 +123,17 @@
 
 @media (width <= 992px) {
 	.home-page-container {
-		gap: 1rem;
+		gap: 3vh;
+		padding: 1rem;
 		.main-content-container {
-			gap: 7rem;
 			.top-main-container {
 				flex-direction: column;
 				align-items: center;
-				gap: 2rem;
+				gap: 8vh;
 				.about-me-container {
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
-				}
-			}
-		}
-	}
-}
-
-// Mobiles - changing layout.
-
-@media (width <= 450px) {
-	.home-page-container {
-		padding-top: 1.5rem;
-		gap: 0.5rem;
-		.main-content-container {
-			.top-main-container {
-				.laptop-style {
-					width: 15rem;
-					height: 13rem;
-					.line-container {
-						font-size: 0.6rem;
-					}
 				}
 			}
 			.bottom-main-container {
@@ -162,31 +143,10 @@
 	}
 }
 
-// Mobile with special viewports such as s23, Iphone 13/12 and more.
-
-@media (width <= 450px) and (800px <= height <= 950px) {
-	.home-page-container {
-		.main-content-container {
-			.top-main-container {
-				gap: 5rem;
-				.about-me-container {
-					gap: 4rem;
-				}
-				.laptop-style {
-					width: 20rem;
-					height: 17rem;
-					.line-container {
-						font-size: 0.8rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-// // Tablets such as Ipad and more.
+// Tablets such as Ipad and more.
 
 // @media (700px <= width <= 1100px) and (700px <= height <= 1400px) {
 // 	.home-page-container {
+// 		background-color: red;
 // 	}
 // }

@@ -50,7 +50,6 @@ export default function Navbar() {
 					);
 				})}
 			</div>
-			\
 			{responsiveNav ? (
 				<CloseIcon className={styles["menu-icon"]} onClick={() => setResponsiveNav(false)} />
 			) : (
