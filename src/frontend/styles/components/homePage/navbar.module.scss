@@ -5,25 +5,25 @@
 
 .navbar-container {
 	width: 100%;
-	height: 6rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	.menu-icon {
-		width: 2rem;
-		height: 2rem;
+		width: 1.5rem;
+		height: 1.5rem;
 		color: white;
 		position: absolute;
-		right: 0px;
+		right: 2rem;
 		display: none;
+		cursor: pointer;
 	}
 	.nav-options-container {
 		display: flex;
 		gap: 7rem;
 		.link-style {
 			font-family: shareTechMono;
-			font-size: 1.3rem;
+			font-size: clamp(1.1rem, 1vw + 0.25rem, 1.3rem);
 			color: white;
 			cursor: pointer;
 			text-transform: uppercase;
@@ -52,25 +52,12 @@
 	}
 }
 
-@media (height <= 800px) {
-	.navbar-container {
-		height: 75px;
-		.nav-options-container {
-			gap: 75px;
-			.link-style {
-				font-size: 1rem;
-			}
-		}
-	}
-}
+// Changing layout of navbar.
 
 @media (width <= 992px) {
 	.navbar-container {
-		width: 100%;
-		height: 50px;
 		z-index: 1000;
 		.nav-options-container {
-			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -81,10 +68,10 @@
 			right: -100%;
 			background: rgb(43, 43, 43);
 			transition: all 500ms ease-in-out;
+
 			.link-style {
-				font-size: 2rem;
-				transform: translateX(20rem);
-				transition: all 500ms;
+				transform: translateX(40rem);
+				transition: transform 500ms;
 				&:nth-child(2) {
 					transition-delay: 150ms;
 				}
@@ -109,32 +96,6 @@
 		}
 		.menu-icon {
 			display: block;
-		}
-	}
-}
-
-@media (width <= 650px) {
-	.navbar-container {
-		height: fit-content;
-		.menu-icon {
-			width: 25px;
-			height: 25px;
-		}
-	}
-}
-
-// Mobile.
-
-@media (width <= 450px) {
-	.navbar-container {
-		.nav-options-container {
-			.link-style {
-				font-size: 1.2rem;
-			}
-		}
-		.menu-icon {
-			width: 20px;
-			height: 20px;
 		}
 	}
 }

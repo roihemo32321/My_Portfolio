@@ -1,21 +1,21 @@
 .main-socials-container {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 1rem;
 	.title-style {
 		font-family: shareTechMono;
-		font-size: 1.5rem;
+		font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
 		color: white;
 		text-transform: uppercase;
 	}
 	.social-options {
 		display: flex;
-		width: fit-content;
-		gap: 10px;
+		gap: 1rem;
 		.option-container {
 			cursor: pointer;
-			width: 55px;
-			height: 55px;
+			width: 15%;
+			min-width: 45px;
+			padding: 0.85rem 0;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -27,45 +27,34 @@
 				filter: brightness(0.7);
 			}
 			.icon-style {
-				width: 30px;
-				height: 30px;
+				width: 1.6rem;
+				height: 1.6rem;
 				color: white;
 			}
 		}
 	}
 }
 
-@media only screen and (height <=800px) {
+// Changing the layout.
+
+@media (width <= 992px) {
 	.main-socials-container {
-		.title-style {
-			font-size: 1.2rem;
-		}
+		align-items: center;
 		.social-options {
-			.option-container {
-				width: 45px;
-				height: 45px;
-				.icon-style {
-					width: 25px;
-					height: 25px;
-				}
-			}
+			justify-content: center;
 		}
 	}
 }
 
-@media screen and (width <= 650px) {
+//	Mobiles
+
+@media (width <= 450px) {
 	.main-socials-container {
-		align-items: center;
-		.title-style {
-			font-size: 1rem;
-		}
 		.social-options {
 			.option-container {
-				width: 35px;
-				height: 35px;
 				.icon-style {
-					width: 20px;
-					height: 20px;
+					width: 1.2rem;
+					height: 1.2rem;
 				}
 			}
 		}

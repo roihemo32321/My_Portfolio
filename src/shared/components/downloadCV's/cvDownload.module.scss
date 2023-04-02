@@ -2,10 +2,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 300px;
-	padding: 15px;
-	gap: 15px;
-	border-radius: 10px;
+	width: 85%;
+	min-width: 200px;
+	padding: 0.85rem 0;
+	gap: 1rem;
+	border-radius: 0.6rem;
 	background-color: #952995;
 	outline: none;
 	text-decoration: none;
@@ -16,40 +17,23 @@
 		filter: brightness(1);
 	}
 	.title-style {
-		font-size: 1.3rem;
+		font-size: clamp(0.9rem, 1vw + 0.5rem, 1.3rem);
 		font-family: shareTechMono;
 		color: white;
 	}
 	.icon-container {
-		width: 30px;
-		height: 30px;
+		width: 1.75rem;
+		height: 1.75rem;
 		color: white;
 	}
 }
 
-@media only screen and (width <= 450px) {
+@media (width <= 450px) {
 	.cv-btn {
-		width: 150px;
-		padding: 12.5px;
-		.title-style {
-			font-size: 0.8rem;
-		}
+		padding: 0.65rem 0;
 		.icon-container {
-			width: 15px;
-			height: 15px;
-		}
-	}
-}
-
-/* iphone XR, 11 */
-/* iphone 12, 12 Pro */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2),
-	only screen and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-	.cv-btn {
-		width: 200px;
-		padding: 15px;
-		.title-style {
-			font-size: 1rem;
+			width: 1.3rem;
+			height: 1.3rem;
 		}
 	}
 }

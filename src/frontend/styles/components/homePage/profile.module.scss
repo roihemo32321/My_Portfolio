@@ -5,42 +5,42 @@
 		.white-title {
 			font-family: RoadRadioBold;
 			color: white;
-			font-size: 6rem;
+			font-size: clamp(3.5rem, 4vw + 1rem, 6.5rem);
 		}
 
 		.purple-title {
 			font-family: RoadRadioBold;
 			color: var(--primaryColor);
-			font-size: 6rem;
+			font-size: clamp(3.5rem, 4vw + 1rem, 6.5rem);
 			text-shadow: 3px 3px #580f5860;
 		}
 
 		.mini-white-title {
 			font-family: RoadRadioBold;
 			color: white;
-			font-size: 1.5rem;
+			font-size: clamp(0.9rem, 0.5vw + 0.5rem, 1.5rem);
 		}
 
 		.titles-container {
 			display: flex;
-			gap: 25px;
+			gap: 1.5em;
 		}
 
 		.sub-titles-container {
 			display: flex;
 			align-items: center;
-			gap: 20px;
+			gap: 1.5em;
 			.developer-titles-container {
 				display: flex;
 				flex-direction: column;
-				gap: 5px;
+				gap: 0.25em;
 				.mini-titles-container {
 					display: flex;
 					align-items: center;
-					gap: 10px;
+					gap: 0.5em;
 					.line {
 						border: 1px solid white;
-						width: 75px;
+						width: 50%;
 						height: 2px;
 					}
 				}
@@ -49,73 +49,69 @@
 	}
 }
 
-@media only screen and (height <=800px) {
-	.profile-container {
-		.main-titles-container {
-			.white-title,
-			.purple-title {
-				font-size: 5rem;
-			}
-			.mini-white-title {
-				font-size: 1.25rem;
-			}
-		}
-	}
-}
+// @media only screen and (height <=800px) {
+// 	.profile-container {
+// 		.main-titles-container {
+// 			.white-title,
+// 			.purple-title {
+// 				font-size: 5rem;
+// 			}
+// 			.mini-white-title {
+// 				font-size: 1.25rem;
+// 			}
+// 		}
+// 	}
+// }
 
-@media only screen and (width <= 1200px) {
-	.profile-container {
-		.main-titles-container {
-			.white-title,
-			.purple-title {
-				font-size: 5rem;
-			}
-			.mini-white-title {
-				font-size: 1rem;
-			}
-		}
-	}
-}
+// @media only screen and (width <= 1200px) {
+// 	.profile-container {
+// 		.main-titles-container {
+// 			.white-title,
+// 			.purple-title {
+// 				font-size: 5rem;
+// 			}
+// 			.mini-white-title {
+// 				font-size: 1rem;
+// 			}
+// 		}
+// 	}
+// }
 
-@media only screen and (width <= 992px) {
-	.profile-container {
-		.main-titles-container {
-			.white-title,
-			.purple-title {
-				font-size: 4.5rem;
-			}
-			.mini-white-title {
-				font-size: 1.1rem;
-			}
-		}
-	}
-}
+// @media only screen and (width <= 992px) {
+// 	.profile-container {
+// 		.main-titles-container {
+// 			.white-title,
+// 			.purple-title {
+// 				font-size: 4.5rem;
+// 			}
+// 			.mini-white-title {
+// 				font-size: 1.1rem;
+// 			}
+// 		}
+// 	}
+// }
 
-@media screen and (width <= 780px) {
-	.profile-container {
-		.main-titles-container {
-			.white-title,
-			.purple-title {
-				font-size: 4rem;
-			}
-			.mini-white-title {
-				font-size: 1.1rem;
-			}
-		}
-	}
-}
+// @media screen and (width <= 780px) {
+// 	.profile-container {
+// 		.main-titles-container {
+// 			.white-title,
+// 			.purple-title {
+// 				font-size: 4rem;
+// 			}
+// 			.mini-white-title {
+// 				font-size: 1.1rem;
+// 			}
+// 		}
+// 	}
+// }
 
-@media screen and (width <= 650px) {
+@media screen and (width <= 450px) {
 	.profile-container {
 		.main-titles-container {
 			.white-title,
 			.purple-title {
-				justify-content: center;
 				display: flex;
-				font-size: 3.5rem;
-			}
-			.mini-white-title {
-				font-size: 1rem;
+				justify-content: center;
 			}
 			.titles-container {
 				justify-content: center;
@@ -127,31 +123,31 @@
 	}
 }
 
-@media screen and (width <= 380px) {
-	.profile-container {
-		.main-titles-container {
-			.white-title,
-			.purple-title {
-				font-size: 2.5rem;
-			}
-			.mini-white-title {
-				font-size: 0.9rem;
-			}
-		}
-	}
-}
+// @media screen and (width <= 380px) {
+// 	.profile-container {
+// 		.main-titles-container {
+// 			.white-title,
+// 			.purple-title {
+// 				font-size: 2.5rem;
+// 			}
+// 			.mini-white-title {
+// 				font-size: 0.9rem;
+// 			}
+// 		}
+// 	}
+// }
 
 // Iphone X
-@media only screen and (device-width: 375px) and (device-height: 812px) {
-	.profile-container {
-		.main-titles-container {
-			.white-title,
-			.purple-title {
-				font-size: 3.5rem;
-			}
-			.mini-white-title {
-				font-size: 1rem;
-			}
-		}
-	}
-}
+// @media only screen and (device-width: 375px) and (device-height: 812px) {
+// 	.profile-container {
+// 		.main-titles-container {
+// 			.white-title,
+// 			.purple-title {
+// 				font-size: 3.5rem;
+// 			}
+// 			.mini-white-title {
+// 				font-size: 1rem;
+// 			}
+// 		}
+// 	}
+// }

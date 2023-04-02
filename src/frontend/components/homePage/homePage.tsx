@@ -5,10 +5,6 @@ import SocialMenu from "./socialMenu";
 import Image from "next/image";
 import CVDownload from "@/shared/components/downloadCV's/cvDownload";
 
-const test = () => {
-	console.log("hello world");
-};
-
 export default function HomePage() {
 	return (
 		<div className={styles["home-page-container"]} id="home">
