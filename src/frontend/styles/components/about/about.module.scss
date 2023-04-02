@@ -57,7 +57,7 @@
 			.me-title {
 				display: flex;
 				justify-content: flex-end;
-				color: #9e2a9e;
+				color: var(--primaryColor);
 				text-shadow: 3px 3px #580f5860;
 			}
 		}
@@ -65,8 +65,8 @@
 
 	.seperator-line {
 		width: 3px;
-		height: 80%;
-		background-color: rgb(158, 42, 158, 0.2);
+		height: 70%;
+		background-color: rgba(136, 136, 136, 0.2);
 	}
 
 	.right-container {

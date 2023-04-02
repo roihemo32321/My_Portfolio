@@ -1,55 +1,64 @@
 .home-page-container {
 	display: flex;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
+	height: 100svh;
 	flex-direction: column;
-	gap: 60px;
+	gap: 4rem;
 	position: relative;
-	padding: 30px;
+	padding: 1rem;
 	.main-content-container {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 100px;
+		gap: 10rem;
 		.top-main-container {
+			width: 100%;
 			display: flex;
-			gap: 7.5rem;
+			justify-content: center;
+			align-items: center;
+			gap: 9rem;
 			.about-me-container {
 				display: flex;
 				flex-direction: column;
-				gap: 40px;
+				gap: 2rem;
 			}
 			.laptop-style {
 				position: relative;
-				width: 550px;
-				height: 550px;
-				filter: brightness(0.7);
-				opacity: 0.3;
-				transition: 325ms;
-
-				.line-1 {
+				width: 25rem;
+				height: 20rem;
+				.laptop-image {
+					filter: invert(0.8);
+				}
+				.line-container {
 					position: absolute;
-					top: 17.5%;
+					top: 8%;
 					left: 18%;
 					color: white;
-					width: 0;
 					border-right: 2px solid rgba(255, 255, 255, 0.75);
 					white-space: nowrap;
 					overflow: hidden;
-					font-size: 1.3rem;
-					font-family: shareTechMono;
+					font-size: 1em;
+					font-family: cascadia;
 					user-select: none;
-					animation: blinkTextCursor 500ms steps(27) infinite normal;
-				}
+					animation: typing-animation 7s infinite linear;
 
-				&:hover {
-					opacity: 0.7;
-					filter: brightness(0.8);
-				}
+					.white-span {
+						color: white;
+					}
 
-				&:hover .line-1 {
-					animation: typewriter 1.25s steps(27) forwards;
+					.purple-span {
+						color: purple;
+					}
+
+					.orange-span {
+						color: orange;
+					}
+
+					.yellow-span {
+						color: yellow;
+					}
 				}
 			}
 		}
@@ -58,7 +67,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			gap: 25px;
+			gap: 1.5rem;
 			.copyright-style {
 				font-size: 0.9rem;
 				color: white;
@@ -81,87 +90,88 @@
 	}
 }
 
-@keyframes typewriter {
-	from {
-		width: 0;
-	}
-	to {
-		width: 55%;
-	}
-}
-
-@keyframes blinkTextCursor {
-	from {
+@keyframes typing-animation {
+	0%,
+	14%,
+	28% {
 		border-right-color: rgba(255, 255, 255, 0.75);
+		width: 0%;
 	}
-	to {
+
+	7%,
+	21% {
 		border-right-color: transparent;
 	}
-}
 
-@media (height <= 800px) {
-	.home-page-container {
-		gap: 30px;
-		.main-content-container {
-			gap: 20px;
-			.top-main-container {
-				.laptop-style {
-					width: 350px;
-					height: 350px;
-					.line-1 {
-						font-size: 0.82rem;
-					}
-				}
-			}
-		}
+	78% {
+		width: 59%;
+	}
+
+	85%,
+	95% {
+		border-right-color: transparent;
+	}
+
+	90%,
+	100% {
+		border-right-color: rgba(255, 255, 255, 0.75);
 	}
 }
 
-@media (width <= 1200px) {
-	.home-page-container {
-		.main-content-container {
-			gap: 30px;
-			.top-main-container {
-				gap: 20px;
-				.laptop-style {
-					width: 350px;
-					height: 350px;
-					.line-1 {
-						font-size: 0.82rem;
-					}
-				}
-			}
-			.bottom-main-container {
-				gap: 35px;
-				.copyright-style {
-					font-size: 1rem;
-				}
-			}
-		}
-	}
-}
+// @media (height <= 800px) {
+// 	.home-page-container {
+// 		gap: 30px;
+// 		.main-content-container {
+// 			gap: 20px;
+// 			.top-main-container {
+// 				.laptop-style {
+// 					width: 350px;
+// 					height: 350px;
+// 					.line-1 {
+// 						font-size: 0.82rem;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (width <= 1200px) {
+// 	.home-page-container {
+// 		.main-content-container {
+// 			gap: 30px;
+// 			.top-main-container {
+// 				gap: 20px;
+// 				.laptop-style {
+// 					width: 350px;
+// 					height: 350px;
+// 					.line-1 {
+// 						font-size: 0.82rem;
+// 					}
+// 				}
+// 			}
+// 			.bottom-main-container {
+// 				gap: 35px;
+// 				.copyright-style {
+// 					font-size: 1rem;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 @media (width <= 992px) {
 	.home-page-container {
 		.main-content-container {
-			gap: 60px;
 			.top-main-container {
-				width: 100%;
 				align-items: center;
 				flex-direction: column;
+				gap: 6rem;
 				.about-me-container {
 					width: 100%;
 					flex-direction: row;
 					align-items: center;
 					justify-content: center;
-					gap: 115px;
-				}
-				.laptop-style {
-					width: 350px;
-					height: 350px;
-					.line-1 {
-						font-size: 0.7rem;
-					}
 				}
 			}
 			.bottom-main-container {
@@ -171,37 +181,32 @@
 	}
 }
 
-@media (width <= 780px) {
-	.home-page-container {
-		.main-content-container {
-			gap: 140px;
-			.top-main-container {
-				gap: 70px;
-				.about-me-container {
-					gap: 70px;
-				}
-				.laptop-style {
-					width: 300px;
-					height: 300px;
-				}
-			}
-		}
-	}
-}
+// @media (width <= 780px) {
+// 	.home-page-container {
+// 		.main-content-container {
+// 			gap: 140px;
+// 			.top-main-container {
+// 				gap: 70px;
+// 				.about-me-container {
+// 					gap: 70px;
+// 				}
+// 				.laptop-style {
+// 					width: 300px;
+// 					height: 300px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 @media (width <= 650px) {
 	.home-page-container {
 		.main-content-container {
 			gap: 0px;
 			.top-main-container {
-				gap: 25px;
 				.about-me-container {
-					gap: 40px;
 					flex-direction: column;
-				}
-				.laptop-style {
-					width: 250px;
-					height: 250px;
+					gap: 2.5rem;
 				}
 			}
 			.bottom-main-container {
@@ -211,44 +216,44 @@
 	}
 }
 
-// Mobiles.
+// // Mobiles.
 
-@media (width <= 380px) {
-	.home-page-container {
-		.main-content-container {
-			.top-main-container {
-				gap: 40px;
-				.about-me-container {
-					gap: 60px;
-				}
-				.laptop-style {
-					width: 200px;
-					height: 200px;
-				}
-			}
-		}
-	}
-}
+// @media (width <= 380px) {
+// 	.home-page-container {
+// 		.main-content-container {
+// 			.top-main-container {
+// 				gap: 40px;
+// 				.about-me-container {
+// 					gap: 60px;
+// 				}
+// 				.laptop-style {
+// 					width: 200px;
+// 					height: 200px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-// Mobile with special viewports such as s23, Iphone 13/12 and more.
+// // Mobile with special viewports such as s23, Iphone 13/12 and more.
 
-@media (width <= 450px) and (800px <= height <= 950px) {
-	.home-page-container {
-		.main-content-container {
-			.top-main-container {
-				gap: 75px;
-				.laptop-style {
-					width: 250px;
-					height: 250px;
-				}
-			}
-		}
-	}
-}
+// @media (width <= 450px) and (800px <= height <= 950px) {
+// 	.home-page-container {
+// 		.main-content-container {
+// 			.top-main-container {
+// 				gap: 75px;
+// 				.laptop-style {
+// 					width: 250px;
+// 					height: 250px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-// Tablets such as Ipad and more.
+// // Tablets such as Ipad and more.
 
-@media (700px <= width <= 1100px) and (700px <= height <= 1400px) {
-	.home-page-container {
-	}
-}
+// @media (700px <= width <= 1100px) and (700px <= height <= 1400px) {
+// 	.home-page-container {
+// 	}
+// }

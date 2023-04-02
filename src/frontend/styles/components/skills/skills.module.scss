@@ -34,7 +34,7 @@
 			transform: translateX(-100%);
 			filter: blur(5px);
 			.skills-span {
-				color: #9e2a9e;
+				color: var(--primaryColor);
 				text-shadow: 3px 3px #580f5860;
 			}
 		}
@@ -69,7 +69,7 @@
 			transform: translateX(-100%);
 			filter: blur(5px);
 			.soft-span {
-				color: #9e2a9e;
+				color: var(--primaryColor);
 				text-shadow: 3px 3px #580f5860;
 			}
 		}

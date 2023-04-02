@@ -5,6 +5,10 @@ import SocialMenu from "./socialMenu";
 import Image from "next/image";
 import CVDownload from "@/shared/components/downloadCV's/cvDownload";
 
+const test = () => {
+	console.log("hello world");
+};
+
 export default function HomePage() {
 	return (
 		<div className={styles["home-page-container"]} id="home">
@@ -17,8 +21,15 @@ export default function HomePage() {
 						<SocialMenu />
 					</div>
 					<div className={styles["laptop-style"]}>
-						<Image src="/static/images/laptop3.png" alt="not-loaded" fill />
-						<div className={`${styles["line-1"]}`}>{`console.log("Hello World");`}</div>
+						<Image className={styles["laptop-image"]} src="/static/images/laptop.png" alt="not-loaded" fill />
+						<div className={`${styles["line-container"]}`}>
+							<span className={styles["white-span"]}>console.</span>
+							<span className={styles["yellow-span"]}>log</span>
+							<span className={styles["purple-span"]}>(</span>
+							<span className={styles["orange-span"]}>Hello World</span>
+							<span className={styles["purple-span"]}>)</span>
+							<span className={styles["white-span"]}>;</span>
+						</div>
 					</div>
 				</div>
 				<div className={styles["bottom-main-container"]}>
