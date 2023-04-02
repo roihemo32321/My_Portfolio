@@ -27,8 +27,7 @@
 			.laptop-style {
 				position: relative;
 				width: clamp(14rem, 10vw + 10rem, 30rem);
-				height: 30vh;
-				max-height: 70%;
+				height: clamp(10rem, 10vh + 10rem, 30rem);
 				.laptop-image {
 					filter: invert(0.8);
 				}
@@ -123,13 +122,13 @@
 
 @media (width <= 992px) {
 	.home-page-container {
-		gap: 3vh;
+		gap: min(3vh, 5rem);
 		padding: 1rem;
 		.main-content-container {
 			.top-main-container {
 				flex-direction: column;
 				align-items: center;
-				gap: 8vh;
+				gap: min(8vh, 5rem);
 				.about-me-container {
 					flex-direction: column;
 					align-items: center;
