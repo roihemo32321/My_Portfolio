@@ -14,7 +14,7 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<HomePage />
-				<Resume />
+				{/* <Resume /> */}
 				<Skills />
 				<About />
 			</main>

@@ -1,11 +1,11 @@
 .single-skill-container {
 	width: 20%;
 	min-width: 70px;
-	padding: 0.75rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 10px;
 	gap: 1rem;
 	border-radius: 5px;
 	background-color: #3d3e42;
@@ -13,12 +13,12 @@
 	filter: blur(5px);
 	transform: translateX(-100%);
 	.svg-style {
-		width: 50%;
-		height: 50%;
+		width: clamp(2rem, 1vw + 1rem, 5rem);
+		height: clamp(2rem, 1vw + 1rem, 5rem);
 	}
 	.title-style {
 		white-space: nowrap;
-		font-size: clamp(0.7rem, 1vw + 0.25rem, 1rem);
+		font-size: clamp(0.7rem, 0.75vw + 0.2rem, 1rem);
 		color: rgb(205, 205, 205);
 		font-family: shareTechMono;
 	}
