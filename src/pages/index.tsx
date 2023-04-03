@@ -4,6 +4,7 @@ import Skills from "@/frontend/components/skills/skills";
 import Resume from "@/frontend/components/resume/resume";
 import Head from "next/head";
 import styles from "../frontend/styles/index.module.scss";
+import Contacts from "@/frontend/components/contacts/contacts";
 
 export default function Home() {
 	return (
@@ -14,9 +15,10 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<HomePage />
-				{/* <Resume /> */}
+				<Resume />
 				<Skills />
 				<About />
+				<Contacts />
 			</main>
 		</>
 	);
