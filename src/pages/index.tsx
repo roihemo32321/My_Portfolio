@@ -14,9 +14,9 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<HomePage />
-				<About />
-				<Skills />
 				<Resume />
+				<Skills />
+				<About />
 			</main>
 		</>
 	);

@@ -1,27 +1,30 @@
 .about-container {
 	width: 100%;
 	height: 80%;
+	min-height: 675px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 100px;
 	position: relative;
+	gap: 6rem;
+	padding: 1rem;
 
-	*::-webkit-scrollbar {
-		width: 0.6rem;
-	}
-	*::-webkit-scrollbar-track {
-		background: #d8dad8;
-		border-radius: 100vw;
-	}
-	*::-webkit-scrollbar-thumb {
-		background-color: #141414;
-		border-radius: 100vw;
-		transition: 325ms background;
-		&:hover {
-			background-color: #00000050;
-		}
-	}
+	// *::-webkit-scrollbar {
+	// 	width: 0.6rem;
+	// }
+	// *::-webkit-scrollbar-track {
+	// 	background: #d8dad8;
+	// 	border-radius: 100vw;
+	// }
+	// *::-webkit-scrollbar-thumb {
+	// 	background-color: #141414;
+	// 	border-radius: 100vw;
+	// 	transition: 325ms background;
+	// 	&:hover {
+	// 		background-color: #00000050;
+	// 	}
+	// }
+
 	.background-container {
 		width: 100%;
 		height: 100%;
@@ -38,9 +41,9 @@
 	.left-container {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center;
-		gap: 90px;
+		align-items: center;
+		gap: 4rem;
 		transform: translateX(-50%);
 		opacity: 0;
 		.titles-container {
@@ -49,7 +52,7 @@
 			.about-title,
 			.me-title {
 				font-family: RoadRadioBold;
-				font-size: clamp(4rem, 5vw + 1rem, 8rem); // Use clamp for headers and more.
+				font-size: clamp(3.1rem, 7vw + 1rem, 7rem); // Use clamp for headers and more.
 			}
 			.about-title {
 				color: black;
@@ -60,6 +63,12 @@
 				color: var(--primaryColor);
 				text-shadow: 3px 3px #580f5860;
 			}
+		}
+		.cv-download-container {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 
@@ -74,11 +83,12 @@
 		overflow-y: overlay;
 		transform: translateX(50%);
 		opacity: 0;
-
-		p {
-			font-family: sans-serif;
-			color: black;
-			font-size: 1.3rem;
+		.text-container {
+			p {
+				font-family: sans-serif;
+				font-size: clamp(1rem, 0.6vw + 0.5rem, 1.3rem);
+				color: black;
+			}
 		}
 	}
 
@@ -96,28 +106,19 @@
 	}
 }
 
-@media (height <= 800px) {
-	.about-container {
-		.left-container {
-			gap: 50px;
-		}
-		.right-container {
-			p {
-				font-size: 1rem;
-			}
-		}
-	}
-}
+// Changing the layout of the page.
 
 @media (width <= 992px) {
 	.about-container {
 		flex-direction: column;
-		gap: 50px;
+		gap: min(2.5rem, 5vh);
 		.left-container {
-			gap: 50px;
+			width: 70%;
+			gap: min(2rem, 5vh);
 			.titles-container {
-				align-items: center;
+				gap: 1rem;
 				justify-content: center;
+				flex-direction: row;
 			}
 		}
 
@@ -126,45 +127,9 @@
 		}
 
 		.right-container {
-			width: 70%;
-		}
-	}
-}
-
-@media (width <= 780px) {
-	.about-container {
-		.right-container {
-			width: 80%;
-			p {
-				font-size: 1.1rem;
-			}
-		}
-	}
-}
-
-@media (width <= 450px) {
-	.about-container {
-		gap: 20px;
-		.left-container {
-			gap: 15px;
-		}
-		.right-container {
-			p {
-				font-size: 0.7rem;
-			}
-		}
-	}
-}
-
-// Mobile with special viewports such as s23, Iphone 13/12 and more.
-
-@media (width <= 450px) and (800px <= height <= 950px) {
-	.about-container {
-		gap: 20px;
-
-		.right-container {
-			p {
-				font-size: 1rem;
+			width: 100%;
+			.text-container {
+				padding: 0.5vh;
 			}
 		}
 	}

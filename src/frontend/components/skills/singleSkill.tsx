@@ -6,6 +6,7 @@ type Props = {
 	svgComponent: JSX.Element;
 	title: string;
 };
+
 export default function SingleSkill({ svgComponent, title }: Props) {
 	const animationRef = useRef<HTMLDivElement>(null);
 	const animationOnScreen = useElementOnScreen(animationRef);

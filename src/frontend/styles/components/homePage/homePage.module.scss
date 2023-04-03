@@ -44,20 +44,24 @@
 					user-select: none;
 					animation: typing-animation 7s infinite linear;
 
+					.blue-span {
+						color: #9cdcfe;
+					}
+
 					.white-span {
-						color: white;
+						color: #d4d4d4;
 					}
 
 					.purple-span {
-						color: purple;
+						color: #da70d6;
 					}
 
 					.orange-span {
-						color: orange;
+						color: #ce9178;
 					}
 
 					.yellow-span {
-						color: yellow;
+						color: #dcdcaa;
 					}
 				}
 			}
@@ -104,7 +108,7 @@
 	}
 
 	78% {
-		max-width: 60%; // Telling the text to fit-content by setting the max-width to 60%.
+		max-width: 100%; // Telling the text to fit-content by setting the max-width to 60%.
 	}
 
 	85%,
