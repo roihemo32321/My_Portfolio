@@ -1,11 +1,12 @@
 .skills-main-container {
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
 	position: relative;
-	gap: 85px;
-	padding-top: 20px;
+	padding: 1rem;
+	gap: 3rem;
 	.background-container {
 		width: 100%;
 		height: 100%;
@@ -20,14 +21,16 @@
 		z-index: -1;
 	}
 	.main-skills-container {
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 15px;
+		gap: 1rem;
 		.skills-title {
 			display: flex;
-			gap: 20px;
-			font-size: 4rem;
+			gap: 1.25rem;
+			font-size: clamp(2.25rem, 4vw + 1rem, 5rem);
 			color: white;
 			font-family: RoadRadioBold;
 			opacity: 0;
@@ -45,24 +48,27 @@
 			transition: all 500ms;
 		}
 		.skills-container {
-			width: 550px;
+			width: 30%;
+			min-width: 16rem;
+			height: 100%;
 			display: flex;
 			justify-content: center;
-			gap: 20px;
+			gap: 1.25rem;
 			flex-wrap: wrap;
 		}
 	}
 
 	.soft-skills-container {
-		width: 75%;
+		width: 100%;
+		height: 100%;
 		display: flex;
-		gap: 15px;
 		flex-direction: column;
-		padding-left: 250px;
+		align-items: center;
+		gap: 1rem;
 		.soft-title {
 			display: flex;
-			gap: 20px;
-			font-size: 4rem;
+			gap: 1.25rem;
+			font-size: clamp(2.25rem, 4vw + 1rem, 5rem);
 			color: white;
 			font-family: RoadRadioBold;
 			opacity: 0;
@@ -80,114 +86,123 @@
 			transition: all 500ms;
 		}
 		.skills-container {
+			width: 55%;
+			min-width: 16rem;
 			display: flex;
+			justify-content: center;
 			flex-wrap: wrap;
-			gap: 15px;
+			gap: 1rem;
 		}
 	}
 }
 
-@media only screen and (height <= 800px) {
+@media (width <= 992px) {
 	.skills-main-container {
-		gap: 50px;
-		.main-skills-container {
-			.skills-title {
-				font-size: 3rem;
-			}
-			.skills-container {
-				width: 400px;
-			}
-		}
+		height: fit-content;
 	}
 }
 
-@media (width <= 1200px) {
-	.skills-main-container {
-		gap: 3em;
-		align-items: center;
-		.soft-skills-container {
-			width: 80%;
-			padding: 0px;
-			.skills-container {
-				justify-content: center;
-			}
-			.soft-title {
-				justify-content: center;
-			}
-		}
-	}
-}
+// @media only screen and (height <= 800px) {
+// 	.skills-main-container {
+// 		gap: 50px;
+// 		.main-skills-container {
+// 			.skills-title {
+// 				font-size: 3rem;
+// 			}
+// 			.skills-container {
+// 				width: 400px;
+// 			}
+// 		}
+// 	}
+// }
 
-@media (width <= 850px) {
-	.skills-main-container {
-		gap: 5em;
-		.soft-skills-container {
-			width: 80%;
-		}
-	}
-}
+// @media (width <= 1200px) {
+// 	.skills-main-container {
+// 		gap: 3em;
+// 		align-items: center;
+// 		.soft-skills-container {
+// 			width: 80%;
+// 			padding: 0px;
+// 			.skills-container {
+// 				justify-content: center;
+// 			}
+// 			.soft-title {
+// 				justify-content: center;
+// 			}
+// 		}
+// 	}
+// }
 
-@media (width <= 650px) {
-	.skills-main-container {
-		gap: 3em;
-		.main-skills-container {
-			.skills-container {
-				width: 80%;
-			}
-			.skills-title {
-				font-size: 3rem;
-			}
-		}
-		.soft-skills-container {
-			width: 100%;
-			.soft-title {
-				font-size: 2.5rem;
-			}
-		}
-	}
-}
+// @media (width <= 850px) {
+// 	.skills-main-container {
+// 		gap: 5em;
+// 		.soft-skills-container {
+// 			width: 80%;
+// 		}
+// 	}
+// }
 
-@media (width <= 385px) {
-	.skills-main-container {
-		gap: 2em;
-		.main-skills-container {
-			width: 80%;
-			.skills-title {
-				font-size: 2.5rem;
-			}
-			.skills-container {
-				width: 100%;
-			}
-		}
+// @media (width <= 650px) {
+// 	.skills-main-container {
+// 		gap: 3em;
+// 		.main-skills-container {
+// 			.skills-container {
+// 				width: 80%;
+// 			}
+// 			.skills-title {
+// 				font-size: 3rem;
+// 			}
+// 		}
+// 		.soft-skills-container {
+// 			width: 100%;
+// 			.soft-title {
+// 				font-size: 2.5rem;
+// 			}
+// 		}
+// 	}
+// }
 
-		.soft-skills-container {
-			width: 80%;
-			.soft-title {
-				font-size: 2rem;
-			}
-		}
-	}
-}
+// @media (width <= 385px) {
+// 	.skills-main-container {
+// 		gap: 2em;
+// 		.main-skills-container {
+// 			width: 80%;
+// 			.skills-title {
+// 				font-size: 2.5rem;
+// 			}
+// 			.skills-container {
+// 				width: 100%;
+// 			}
+// 		}
 
-// Galaxy fold
-@media (width <= 280px) {
-	.skills-main-container {
-		.main-skills-container {
-			width: 80%;
-			.skills-title {
-				font-size: 2rem;
-			}
-		}
-		.soft-skills-container {
-			width: 100%;
-		}
-	}
-}
+// 		.soft-skills-container {
+// 			width: 80%;
+// 			.soft-title {
+// 				font-size: 2rem;
+// 			}
+// 		}
+// 	}
+// }
 
-// Mobile with special viewports such as s23, Iphone 13/12 and more.
+// // Galaxy fold
+// @media (width <= 280px) {
+// 	.skills-main-container {
+// 		.main-skills-container {
+// 			width: 80%;
+// 			.skills-title {
+// 				font-size: 2rem;
+// 			}
+// 		}
+// 		.soft-skills-container {
+// 			width: 100%;
+// 		}
+// 	}
+// }
 
-@media (width <= 450px) and (800px <= height <= 950px) {
-	.skills-main-container {
-		gap: 3em;
-	}
-}
+// // Mobile with special viewports such as s23, Iphone 13/12 and more.
+
+// @media (width <= 450px) and (800px <= height <= 950px) {
+// 	.skills-main-container {
+// 		gap: 3em;
+// 	}
+// }

@@ -1,22 +1,24 @@
 .single-skill-container {
 	width: 20%;
-	height: 100px;
+	min-width: 70px;
+	padding: 0.75rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 15px;
+	gap: 1rem;
 	border-radius: 5px;
 	background-color: #3d3e42;
 	opacity: 0;
 	filter: blur(5px);
 	transform: translateX(-100%);
 	.svg-style {
-		width: 45px;
-		height: 45px;
+		width: 50%;
+		height: 50%;
 	}
 	.title-style {
-		font-size: 1rem;
+		white-space: nowrap;
+		font-size: clamp(0.7rem, 1vw + 0.25rem, 1rem);
 		color: rgb(205, 205, 205);
 		font-family: shareTechMono;
 	}
@@ -38,102 +40,9 @@
 	}
 }
 
-@media only screen and (height <= 800px) {
+@media (width <= 992px) {
 	.single-skill-container {
-		width: 20%;
-		height: 70px;
-		gap: 10px;
-		.svg-style {
-			width: 30px;
-			height: 30px;
-		}
-		.title-style {
-			font-size: 0.75rem;
-		}
-	}
-}
-
-@media (width <= 1200px) {
-	.single-skill-container {
-		width: 20%;
-		height: fit-content;
-		padding: 10px;
-		.svg-style {
-			width: 40px;
-			height: 40px;
-		}
-		.title-style {
-			font-size: 0.8rem;
-		}
-	}
-}
-
-@media (width <= 850px) {
-	.single-skill-container {
-		width: 15%;
-		height: fit-content;
-		padding: 10px;
-		.svg-style {
-			width: 40px;
-			height: 40px;
-		}
-		.title-style {
-			font-size: 0.8rem;
-		}
-	}
-}
-
-@media (width <= 650px) {
-	.single-skill-container {
-		width: 25%;
-		padding: 10px 30px;
-		.svg-style {
-			width: 30px;
-			height: 30px;
-		}
-		.title-style {
-			font-size: 0.85rem;
-			white-space: nowrap;
-		}
-	}
-}
-
-@media (width <= 385px) {
-	.single-skill-container {
-		width: 20%;
-		padding: 5px;
-		.svg-style {
-			width: 25px;
-			height: 25px;
-		}
-		.title-style {
-			font-size: 0.6rem;
-		}
-	}
-}
-
-@media (width <= 280px) {
-	.single-skill-container {
-		width: 25%;
-		.svg-style {
-			width: 20px;
-			height: 20px;
-		}
-	}
-}
-
-// Mobile with special viewports such as s23, Iphone 13/12 and more.
-
-@media (width <= 450px) and (800px <= height <= 950px) {
-	.single-skill-container {
-		width: 25%;
-		gap: 10px;
-		.svg-style {
-			width: 30px;
-			height: 30px;
-		}
-		.title-style {
-			font-size: 0.8rem;
-		}
+		gap: 1.35vh;
+		padding: 0.5vh;
 	}
 }
