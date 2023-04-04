@@ -1,0 +1,20 @@
+.input-container {
+	width: 100%;
+	.input-style {
+		width: 100%;
+		outline: none;
+		border: transparent;
+		text-decoration: none;
+		background-color: #2b2b2b;
+		padding: 1rem;
+		font-size: 1.15rem;
+		&::placeholder {
+			color: white;
+			transition: 325ms all;
+		}
+
+		&:focus::placeholder {
+			color: transparent;
+		}
+	}
+}

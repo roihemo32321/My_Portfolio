@@ -1,6 +1,7 @@
 .contacts-container {
 	width: 100%;
 	height: 100%;
+	padding: 1rem;
 	position: relative;
 	.background-container {
 		width: 100%;
@@ -18,19 +19,49 @@
 		width: 100%;
 		height: 100%;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		.social-links {
-			width: 100%;
-			height: 100%;
+		grid-template-rows: 1fr 9fr 1fr;
+		.main-title-container {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
 			justify-content: center;
-			gap: 4rem;
+			gap: 1.25rem;
+			font-size: clamp(2.25rem, 4vw + 1rem, 5rem);
+			color: white;
+			font-family: RoadRadioBold;
+			.contact-span {
+				color: var(--primaryColor);
+				text-shadow: 3px 3px #580f5860;
+			}
 		}
+
 		.email-contact {
 			width: 100%;
 			height: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.main-social-container {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.social-links-container {
+				display: flex;
+				align-items: center;
+				gap: 2rem;
+				.title-container {
+					font-size: 1.2rem;
+					font-family: RoadRadioBold;
+					color: white;
+				}
+				.social-links {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 1rem;
+				}
+			}
 		}
 	}
 }

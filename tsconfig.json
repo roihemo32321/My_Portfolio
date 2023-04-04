@@ -15,7 +15,8 @@
 		"jsx": "preserve",
 		"incremental": true,
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*"],
+			"@/sharedSvgs/*": ["./src/shared/components/svgs/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.jsx"],

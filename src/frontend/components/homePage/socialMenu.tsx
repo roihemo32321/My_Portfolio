@@ -2,7 +2,6 @@ import styles from "../../styles/components/homePage/socialMenu.module.scss";
 import GitHubIcon from "../../../shared/components/svgs/github";
 import LinkedinIcon from "../../../shared/components/svgs/linkedin";
 import TwitterIcon from "../../../shared/components/svgs/twitter";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 const socialOptions = [

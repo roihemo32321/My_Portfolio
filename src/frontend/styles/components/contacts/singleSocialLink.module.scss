@@ -1,37 +1,90 @@
 .social-link-style {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	gap: 1rem;
-	.svg-container {
-		width: 3rem;
-		height: 3rem;
+	justify-content: center;
+	flex-direction: column;
+	outline: none;
+	text-decoration: none;
+	gap: 0.75rem;
+	position: relative;
+	.title-style {
+		position: absolute;
+		color: black;
+		font-weight: bold;
+		font-family: RoadRadioBold;
+		padding: 0.75em;
+		border-radius: 5px;
 		background-color: white;
-		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		.svg-style {
-			width: 1.5rem;
-			height: 1.5rem;
-			color: black;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 1rem;
+			height: 1rem;
+			bottom: -0.5rem;
+			left: 50%;
+			transform: translateX(-50%) rotate(45deg);
 		}
 	}
 
-	.title-style {
-		padding: 10px;
-		border-radius: 20px;
+	.svg-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3.75rem;
+		height: 3.75rem;
+		border-radius: 50%;
 		background-color: white;
-		visibility: hidden;
-		opacity: 0;
-		transition: 325ms all;
+		transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+		.svg-style {
+			width: 2rem;
+			height: 2rem;
+			color: black;
+			transition: color 325ms;
+		}
+	}
+
+	.Linkedin-title-background::before {
+		background-color: #0077b5;
+	}
+
+	.Twitter-title-background::before {
+		background-color: #1da1f2;
+	}
+
+	.GitHub-title-background::before {
+		background-color: #000;
 	}
 
 	&:hover {
 		.title-style {
 			visibility: visible;
 			opacity: 1;
+			transform: translateY(-4.5rem);
+			color: white;
+		}
+		.svg-style {
+			color: white;
+		}
+
+		.Linkedin-title-background,
+		.Linkedin-svg-background,
+		.Linkedin-title-background::before {
+			background-color: #0077b5;
+		}
+
+		.Twitter-title-background,
+		.Twitter-svg-background {
+			background-color: #1da1f2;
+		}
+
+		.GitHub-title-background,
+		.GitHub-svg-background {
+			background-color: #000;
 		}
 	}
 }

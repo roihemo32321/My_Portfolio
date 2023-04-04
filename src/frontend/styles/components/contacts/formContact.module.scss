@@ -1,0 +1,14 @@
+.form-container {
+	display: grid;
+	width: 25%;
+	height: fit-content;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.25rem;
+	.grid-two-span {
+		width: 100%;
+		grid-column: span 2;
+	}
+	.grid-one-span {
+		width: 100%;
+	}
+}
