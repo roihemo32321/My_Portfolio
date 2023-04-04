@@ -49,63 +49,7 @@
 	}
 }
 
-// @media only screen and (height <=800px) {
-// 	.profile-container {
-// 		.main-titles-container {
-// 			.white-title,
-// 			.purple-title {
-// 				font-size: 5rem;
-// 			}
-// 			.mini-white-title {
-// 				font-size: 1.25rem;
-// 			}
-// 		}
-// 	}
-// }
-
-// @media only screen and (width <= 1200px) {
-// 	.profile-container {
-// 		.main-titles-container {
-// 			.white-title,
-// 			.purple-title {
-// 				font-size: 5rem;
-// 			}
-// 			.mini-white-title {
-// 				font-size: 1rem;
-// 			}
-// 		}
-// 	}
-// }
-
-// @media only screen and (width <= 992px) {
-// 	.profile-container {
-// 		.main-titles-container {
-// 			.white-title,
-// 			.purple-title {
-// 				font-size: 4.5rem;
-// 			}
-// 			.mini-white-title {
-// 				font-size: 1.1rem;
-// 			}
-// 		}
-// 	}
-// }
-
-// @media screen and (width <= 780px) {
-// 	.profile-container {
-// 		.main-titles-container {
-// 			.white-title,
-// 			.purple-title {
-// 				font-size: 4rem;
-// 			}
-// 			.mini-white-title {
-// 				font-size: 1.1rem;
-// 			}
-// 		}
-// 	}
-// }
-
-@media screen and (width <= 450px) {
+@media (width <= 450px) {
 	.profile-container {
 		.main-titles-container {
 			.white-title,
@@ -122,32 +66,3 @@
 		}
 	}
 }
-
-// @media screen and (width <= 380px) {
-// 	.profile-container {
-// 		.main-titles-container {
-// 			.white-title,
-// 			.purple-title {
-// 				font-size: 2.5rem;
-// 			}
-// 			.mini-white-title {
-// 				font-size: 0.9rem;
-// 			}
-// 		}
-// 	}
-// }
-
-// Iphone X
-// @media only screen and (device-width: 375px) and (device-height: 812px) {
-// 	.profile-container {
-// 		.main-titles-container {
-// 			.white-title,
-// 			.purple-title {
-// 				font-size: 3.5rem;
-// 			}
-// 			.mini-white-title {
-// 				font-size: 1rem;
-// 			}
-// 		}
-// 	}
-// }

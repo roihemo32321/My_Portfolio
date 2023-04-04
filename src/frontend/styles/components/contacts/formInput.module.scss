@@ -1,5 +1,26 @@
 .input-container {
 	width: 100%;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		width: 0%;
+		height: 2.5px;
+		background-color: var(--primaryColor);
+		transition: width 325ms;
+	}
+
+	&:focus-within::before {
+		width: 100%;
+	}
+
+	&[data-is-valid="false"] {
+		&::before {
+			background-color: red;
+		}
+	}
+
 	.input-style {
 		width: 100%;
 		height: 100%;
@@ -10,6 +31,7 @@
 		padding: 1rem;
 		font-size: 1.15rem;
 		color: white;
+
 		&::placeholder {
 			color: white;
 			transition: 325ms all;
@@ -19,8 +41,8 @@
 			color: transparent;
 		}
 
-		&:focus {
-			border-bottom: 2px solid purple;
+		&:focus .input-container::before {
+			width: 100%;
 		}
 	}
 }
