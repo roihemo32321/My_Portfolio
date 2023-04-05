@@ -40,7 +40,7 @@ export default function FormContact() {
 	};
 
 	return (
-		<form className={styles["form-container"]} ref={formRef} onSubmit={sendEmail}>
+		<form className={styles["form-container"]} ref={formRef} onSubmit={sendEmail} autoComplete="off">
 			<div className={styles["form-grid-container"]}>
 				{inputsContainer.map((val) => (
 					<div key={val} className={styles[returnClassName(val)]}>

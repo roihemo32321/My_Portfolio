@@ -3,7 +3,7 @@ import Experience from "./experience";
 
 const mainResumes = [
 	{
-		mainTitle: "Education Quality",
+		mainTitle: "Education",
 		subTitle: "2017-2020",
 		className: "education-resume",
 		resumeSections: [
