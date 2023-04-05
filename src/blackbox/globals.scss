@@ -8,16 +8,19 @@
 	@font-face {
 		font-family: shareTechMono;
 		src: url("/static/fonts/ShareTechMono-Regular.ttf");
+		font-display: swap;
 	}
 
 	@font-face {
 		font-family: RoadRadioBold;
 		src: url("/static/fonts/RoadRadio\ Bold.ttf");
+		font-display: swap;
 	}
 
 	@font-face {
 		font-family: cascadia;
 		src: url("/static/fonts/Cascadia.ttf");
+		font-display: swap;
 	}
 
 	box-sizing: border-box;

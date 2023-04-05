@@ -12,6 +12,10 @@ export default function Home() {
 			<Head>
 				<title>Roie Hemo | Full Stack Developer</title>
 				<link rel="icon" href="/favicon.ico" />
+				<meta
+					name="description"
+					content="Hey there, welcome to Roie Hemo Full Stack Developer portfolio, enjoy viewing and feel free to contact me at any time."
+				></meta>
 			</Head>
 			<main className={styles.main}>
 				<HomePage />

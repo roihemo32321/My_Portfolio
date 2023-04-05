@@ -55,3 +55,17 @@
 		}
 	}
 }
+
+@media (width <= 992px) {
+	.form-container {
+		width: 100%;
+		.form-grid-container {
+			.grid-one-span {
+				grid-column: span 2;
+			}
+		}
+		.button-style {
+			align-self: center;
+		}
+	}
+}

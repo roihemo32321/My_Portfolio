@@ -90,4 +90,9 @@
 }
 
 @media (width <= 992px) {
+	.social-link-style {
+		.title-style {
+			display: none;
+		}
+	}
 }

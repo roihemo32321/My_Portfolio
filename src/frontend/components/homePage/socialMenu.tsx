@@ -17,7 +17,7 @@ export default function SocialMenu() {
 			<div className={styles["social-options"]}>
 				{socialOptions.map((val) => {
 					return (
-						<Link className={styles["option-container"]} key={val.link} href={val.link} target="_blank">
+						<Link className={styles["option-container"]} key={val.link} href={val.link} target="_blank" aria-label="contact-me">
 							{val.icon}
 						</Link>
 					);

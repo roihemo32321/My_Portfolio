@@ -17,7 +17,7 @@ export default function HomePage() {
 						<SocialMenu />
 					</div>
 					<div className={styles["laptop-style"]}>
-						<Image className={styles["laptop-image"]} src="/static/images/laptop.png" alt="not-loaded" fill />
+						<Image className={styles["laptop-image"]} src="/static/images/laptop.webp" alt="not-loaded" fill />
 						<div className={`${styles["line-container"]}`}>
 							<span className={styles["blue-span"]}>console</span>
 							<span className={styles["white-span"]}>.</span>

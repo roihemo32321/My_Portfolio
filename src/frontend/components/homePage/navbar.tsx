@@ -45,6 +45,7 @@ export default function Navbar() {
 									setResponsiveNav(false);
 								}
 							}}
+							aria-label={`move_${val.title}`}
 						>
 							{val.title}
 						</Link>
