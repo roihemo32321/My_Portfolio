@@ -9,6 +9,7 @@
 	background-color: var(--primaryColor);
 	user-select: none;
 	position: absolute;
+	z-index: 10;
 	visibility: hidden;
 	opacity: 0;
 	transform: translateY(-2rem);
