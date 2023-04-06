@@ -3,7 +3,6 @@ import Navbar from "./navbar";
 import Profile from "./profile";
 import SocialMenu from "./socialMenu";
 import Image from "next/image";
-import CVDownload from "@/shared/components/downloadCV's/cvDownload";
 
 export default function HomePage() {
 	return (
@@ -30,7 +29,6 @@ export default function HomePage() {
 					</div>
 				</div>
 				<div className={styles["bottom-main-container"]}>
-					<CVDownload />
 					<div className={styles["copyright-style"]}>© 2023 by Roie Hemo All rights reserved</div>
 				</div>
 			</div>

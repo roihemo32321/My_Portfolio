@@ -1,0 +1,38 @@
+.error-container {
+	width: fit-content;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	border-radius: 5px;
+	background-color: var(--primaryColor);
+	user-select: none;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-2rem);
+	transition: 500ms all;
+
+	&[data-show="true"] {
+		transform: translateY(0);
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&[data-success="true"] {
+		background-color: rgb(8, 183, 8);
+	}
+
+	.error-style {
+		font-family: RoadRadioBold;
+		color: white;
+		font-weight: bolder;
+	}
+
+	.icon-style {
+		width: 1.75rem;
+		height: 1.75rem;
+		color: white;
+	}
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../styles/components/contacts/formInput.module.scss";
-import { useFormStore } from "@/frontend/libs/stores/formStore";
+import { useFormStore } from "@/libs/stores/formStore";
+import { formFields, formFieldsKeys } from "@/libs/types/formTypes";
 
 type Props = {
 	placeholder: string;
@@ -8,12 +9,12 @@ type Props = {
 };
 
 export default function FormInput({ placeholder, formName }: Props) {
-	const data = useFormStore((state: any) => state[placeholder]);
-	const setData = useFormStore((state: any) => state[`set${placeholder}`]);
+	const data = useFormStore((state) => state[placeholder as formFieldsKeys]);
+	const setData = useFormStore((state) => state[`set${formFields[placeholder as formFieldsKeys]}`]);
 	const [isValid, setIsValid] = useState<boolean>(true);
 
 	const validation = (str: string) => {
-		if (placeholder === "Email") {
+		if (placeholder === "email") {
 			const emailRgex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 			if (!emailRgex.test(str)) {
 				setIsValid(false);
@@ -33,7 +34,7 @@ export default function FormInput({ placeholder, formName }: Props) {
 		<div className={styles["input-container"]} data-is-valid={isValid}>
 			<input
 				type="text"
-				placeholder={placeholder}
+				placeholder={formFields[placeholder as formFieldsKeys]}
 				className={styles["input-style"]}
 				name={formName}
 				value={data}

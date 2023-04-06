@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import styles from "../../styles/components/contacts/textareaInput.module.scss";
-import { useFormStore } from "@/frontend/libs/stores/formStore";
+import { useFormStore } from "@/libs/stores/formStore";
+import { formFields, formFieldsKeys } from "@/libs/types/formTypes";
 
 type Props = {
 	placeholder: string;
 };
 
 export default function TextareaInput({ placeholder }: Props) {
-	const data = useFormStore((state: any) => state[placeholder]);
-	const setData = useFormStore((state: any) => state[`set${placeholder}`]);
+	const data = useFormStore((state) => state[placeholder as formFieldsKeys]);
+	const setData = useFormStore((state) => state[`set${formFields[placeholder as formFieldsKeys]}`]);
 	const [isValid, setIsValid] = useState<boolean>(true);
 
 	const validation = (str: string) => {
@@ -22,9 +23,9 @@ export default function TextareaInput({ placeholder }: Props) {
 	return (
 		<div className={styles["textarea-container"]} data-is-valid={isValid}>
 			<textarea
-				placeholder={placeholder}
+				placeholder={formFields[placeholder as formFieldsKeys]}
 				className={styles["textarea-style"]}
-				name="message"
+				name="Message"
 				value={data}
 				onChange={(e) => {
 					setData(e.target.value);

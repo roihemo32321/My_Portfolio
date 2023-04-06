@@ -4,6 +4,7 @@ import TwitterIcon from "@/sharedSvgs/twitter";
 import LinkedinIcon from "@/sharedSvgs/linkedin";
 import SingleSocialLink from "./singleSocialLink";
 import FormContact from "./formContact";
+import Error from "./error";
 
 const socialArray = [
 	{ title: "Linkedin", svg: <LinkedinIcon /> },
@@ -16,6 +17,7 @@ export default function Contacts() {
 		<div className={styles["contacts-container"]} id="contacts">
 			<div className={styles["background-container"]} />
 			<div className={styles["contacts-flex-container"]}>
+				<Error />
 				<div className={styles["main-title-container"]}>
 					<span className={styles["contact-span"]}>Contact</span>
 					<span className={styles["me-span"]}>Me</span>
