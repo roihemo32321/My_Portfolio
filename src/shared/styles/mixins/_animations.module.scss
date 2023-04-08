@@ -14,9 +14,24 @@
 	transition: all 500ms;
 }
 
+@mixin hideAnimationTop {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: all 500ms;
+}
+
+@mixin hideAnimationBottom {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: all 500ms;
+}
+
 @mixin showAnimation {
 	visibility: visible;
 	opacity: 1;
 	transform: translateX(0);
+	transform: translateY(0);
 	filter: blur(0);
 }

@@ -62,6 +62,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				@include animations.hideAnimationRight;
 				.social-links-container {
 					display: flex;
 					align-items: center;
@@ -79,6 +80,10 @@
 						gap: 1rem;
 					}
 				}
+			}
+
+			.social-animation {
+				@include animations.showAnimation;
 			}
 		}
 	}
