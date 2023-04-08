@@ -5,13 +5,58 @@
 	justify-content: center;
 	position: relative;
 	.menu-icon {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: fit-content;
+		height: fit-content;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		color: white;
 		position: absolute;
-		right: 1rem;
+		right: 0.5rem;
 		display: none;
 		cursor: pointer;
+		.menu-btn-burger {
+			width: 1.5rem;
+			height: 3px;
+			background-color: white;
+			box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+			transition: all 0.5s ease-in-out;
+			cursor: pointer;
+
+			// Using before and after to make two more lines for the burger icon.
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				width: 1.5rem;
+				height: 3px;
+				background: #fff;
+				border-radius: 5px;
+				box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+				transition: all 0.5s ease-in-out;
+				cursor: pointer;
+			}
+
+			&::before {
+				transform: translateY(-0.5rem); // Making a gap between each line.
+			}
+			&::after {
+				transform: translateY(0.5rem); // Making a gap between each line.
+			}
+		}
+
+		/* ANIMATION */
+		.close-icon {
+			transform: translateX(-50px);
+			background: transparent;
+			box-shadow: none;
+			&::before {
+				transform: rotate(45deg) translate(35px, -35px); // Animation to make the x symbol.
+			}
+			&::after {
+				transform: rotate(-45deg) translate(35px, 35px); // Animation to make the x symbol.
+			}
+		}
 	}
 	.nav-options-container {
 		display: flex;

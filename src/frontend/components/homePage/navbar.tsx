@@ -1,7 +1,5 @@
 import Link from "next/link";
 import styles from "../../styles/components/homePage/navbar.module.scss";
-import MenuIcon from "../../../shared/components/svgs/menuIcon";
-import CloseIcon from "../../../shared/components/svgs/close";
 import { useState } from "react";
 
 const navOptions = [
@@ -52,11 +50,10 @@ export default function Navbar() {
 					);
 				})}
 			</div>
-			{responsiveNav ? (
-				<CloseIcon className={styles["menu-icon"]} onClick={() => setResponsiveNav(false)} />
-			) : (
-				<MenuIcon className={styles["menu-icon"]} onClick={() => setResponsiveNav(true)} />
-			)}
+
+			<div className={styles["menu-icon"]} onClick={() => setResponsiveNav(!responsiveNav)}>
+				<div className={`${styles["menu-btn-burger"]} ${responsiveNav ? styles["close-icon"] : ""}`} />
+			</div>
 		</div>
 	);
 }
