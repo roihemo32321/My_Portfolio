@@ -1,0 +1,22 @@
+@mixin hideAnimationLeft {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateX(-100%);
+	filter: blur(5px);
+	transition: all 500ms;
+}
+
+@mixin hideAnimationRight {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateX(100%);
+	filter: blur(5px);
+	transition: all 500ms;
+}
+
+@mixin showAnimation {
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(0);
+	filter: blur(0);
+}

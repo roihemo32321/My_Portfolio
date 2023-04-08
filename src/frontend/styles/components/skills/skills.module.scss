@@ -1,3 +1,5 @@
+@use "@/sharedMixins/animations.module.scss";
+
 .skills-main-container {
 	width: 100%;
 	height: 100%;
@@ -33,19 +35,14 @@
 			font-size: clamp(2.25rem, 4vw + 1rem, 5rem);
 			color: white;
 			font-family: RoadRadioBold;
-			opacity: 0;
-			transform: translateX(-100%);
-			filter: blur(5px);
+			@include animations.hideAnimationLeft;
 			.skills-span {
 				color: var(--primaryColor);
 				text-shadow: 3px 3px #580f5860;
 			}
 		}
 		.show-animation {
-			opacity: 1;
-			transform: translateX(0);
-			filter: blur(0);
-			transition: all 500ms;
+			@include animations.showAnimation;
 		}
 		.skills-container {
 			width: 30%;

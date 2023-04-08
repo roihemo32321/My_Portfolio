@@ -19,9 +19,9 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<HomePage />
-				<Resume />
-				<Skills />
 				<About />
+				<Skills />
+				<Resume />
 				<Contacts />
 			</main>
 		</>

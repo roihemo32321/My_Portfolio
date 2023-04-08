@@ -5,8 +5,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 50px;
-	padding-top: 30px;
+	gap: 2rem;
+	padding-top: 2rem;
 	.background-container {
 		width: 100%;
 		height: 100%;
@@ -23,18 +23,29 @@
 	.title-style {
 		width: fit-content;
 		display: flex;
-		gap: 20px;
-		font-size: 5rem;
+		gap: 1rem;
+		font-size: clamp(3rem, 7vw + 1rem, 5rem);
 		color: black;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(-100%);
 		font-family: RoadRadioBold;
+		transition: all 500ms;
 		.resume-span {
 			color: var(--primaryColor);
 			text-shadow: 3px 3px #580f5860;
 		}
 	}
+
+	.show-animation {
+		transform: translateX(0);
+		opacity: 1;
+		visibility: visible;
+	}
 	.resume-grid-container {
 		width: 50%;
 		display: grid;
+		align-items: center;
 		grid-template-columns: 1fr 1fr;
 		gap: 2rem;
 	}

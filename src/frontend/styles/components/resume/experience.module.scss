@@ -2,14 +2,17 @@
 	width: fit-content;
 	display: flex;
 	flex-direction: column;
-	gap: 2em;
+	gap: 1rem;
 	.titles-container {
 		width: fit-content;
 		display: flex;
 		flex-direction: column;
-		gap: 5px;
+		gap: 0.5rem;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 3s;
 		.main-title {
-			font-size: 2.5rem;
+			font-size: clamp(1.5rem, 1vw + 1rem, 2.5rem);
 			font-family: RoadRadioBold;
 		}
 		.sub-title {
@@ -19,10 +22,14 @@
 		}
 	}
 
+	.show-animation {
+		opacity: 1;
+		visibility: visible;
+	}
+
 	.resume-sections {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		gap: 1.5rem;
 	}
 }

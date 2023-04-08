@@ -10,8 +10,8 @@ const navOptions = [
 		link: "home",
 	},
 	{
-		title: "Resume",
-		link: "resume",
+		title: "About me",
+		link: "aboutMe",
 	},
 	{
 		title: "Skills",
@@ -19,8 +19,8 @@ const navOptions = [
 	},
 
 	{
-		title: "About me",
-		link: "aboutMe",
+		title: "Resume",
+		link: "resume",
 	},
 	{
 		title: "Contacts",

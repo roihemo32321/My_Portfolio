@@ -5,6 +5,8 @@ import LinkedinIcon from "@/sharedSvgs/linkedin";
 import SingleSocialLink from "./singleSocialLink";
 import FormContact from "./formContact";
 import Error from "./error";
+import { useRef } from "react";
+import useElementOnScreen from "@/shared/libs/hooks/useElementOnScreen";
 
 const socialArray = [
 	{ title: "Linkedin", svg: <LinkedinIcon /> },
@@ -13,12 +15,15 @@ const socialArray = [
 ];
 
 export default function Contacts() {
+	const mainTitleRef = useRef<HTMLDivElement>(null);
+	const titleAnimation = useElementOnScreen(mainTitleRef);
+
 	return (
 		<div className={styles["contacts-container"]} id="contacts">
 			<div className={styles["background-container"]} />
 			<div className={styles["contacts-flex-container"]}>
 				<Error />
-				<div className={styles["main-title-container"]}>
+				<div className={`${styles["main-title-container"]} ${titleAnimation ? styles["show-animation"] : ""}`} ref={mainTitleRef}>
 					<span className={styles["contact-span"]}>Contact</span>
 					<span className={styles["me-span"]}>Me</span>
 				</div>
