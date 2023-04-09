@@ -33,8 +33,8 @@ export default function Contacts() {
 					<div className={styles["email-contact"]}>
 						<FormContact />
 					</div>
-					<div className={`${styles["main-social-container"]} ${socialAnimation ? styles["social-animation"] : ""}`} ref={socialRef}>
-						<div className={styles["social-links-container"]}>
+					<div className={styles["main-social-container"]}>
+						<div className={`${styles["social-links-container"]} ${socialAnimation ? styles["social-animation"] : ""}`} ref={socialRef}>
 							<div className={styles["title-container"]}>Let&apos;s get in touch:</div>
 							<div className={styles["social-links"]}>
 								{socialArray.map((val) => (
