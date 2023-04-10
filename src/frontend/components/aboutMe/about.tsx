@@ -9,8 +9,6 @@ export default function About() {
 	const rightSideRef = useRef<HTMLDivElement>(null);
 	const rightSideOnScreen = useElementOnScreen(rightSideRef);
 
-	console.log("test");
-
 	return (
 		<div className={styles["about-container"]} id="aboutMe">
 			<div className={styles["background-container"]} />
