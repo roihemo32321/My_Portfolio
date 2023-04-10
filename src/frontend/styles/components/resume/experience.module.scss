@@ -33,3 +33,12 @@
 		gap: 1.5rem;
 	}
 }
+
+@media (width <= 992px) {
+	.experience-container {
+		align-items: center;
+		.resume-sections {
+			align-items: center;
+		}
+	}
+}

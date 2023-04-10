@@ -1,9 +1,9 @@
 .resume-section-container {
 	width: 75%;
-	min-width: 10rem;
+	min-width: 14rem;
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
+	gap: 1rem;
 	padding: 2rem 1rem;
 	border-radius: 0.7rem;
 	background-color: #242831;
@@ -14,15 +14,14 @@
 	.section-title {
 		width: fit-content;
 		font-family: sans-serif;
-		font-size: 2rem;
+		font-size: clamp(1.25rem, 1vw + 0.5rem, 2rem);
 		color: white;
 	}
 	.section-info {
 		width: fit-content;
 		font-family: sans-serif;
-		font-size: 0.9rem;
+		font-size: clamp(0.7rem, 1vw + 0.15rem, 0.9rem);
 		color: #d3d9e2;
-		text-align: justify;
 	}
 	&:nth-child(1) {
 		transition-delay: 100ms;

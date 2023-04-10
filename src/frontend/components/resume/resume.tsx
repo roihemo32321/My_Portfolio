@@ -9,19 +9,18 @@ const mainResumes = [
 		subTitle: "2017-2020",
 		resumeSections: [
 			{
-				sectionTitle: "Worked on stupid stuff",
+				sectionTitle: "Computer Science",
 				sectionInfo:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium incidunt labore eligendi omnis soluta iste suscipit qui pariatur, possimus nisi earum ipsa vel molestiae itaque non necessitatibus fugit quis placeat.",
+					"5 points of programming using C# and Assembly, We learned the basics of programming such as loops, conditions, etc. We also gained knowledge about data structure such as arrays, lists, binary trees and more.",
 			},
 			{
-				sectionTitle: "Worked on stupid stuff",
+				sectionTitle: "E2E Web Project",
 				sectionInfo:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium incidunt labore eligendi omnis soluta iste suscipit qui pariatur, possimus nisi earum ipsa vel molestiae itaque non necessitatibus fugit quis placeat.",
+					"We had to make a 5 points web development project using C#, Asp.net, Sql, Css, Html and more. In the twelfth grade we had to present our project to an examiner from the Ministry of Education.",
 			},
 			{
-				sectionTitle: "Worked on stupid stuff",
-				sectionInfo:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium incidunt labore eligendi omnis soluta iste suscipit qui pariatur, possimus nisi earum ipsa vel molestiae itaque non necessitatibus fugit quis placeat.",
+				sectionTitle: "Certificate of Excellence",
+				sectionInfo: "Recipient of Ministry of Education’s Certificate of Excellence.",
 			},
 		],
 	},
@@ -30,19 +29,19 @@ const mainResumes = [
 		subTitle: "2020-2023",
 		resumeSections: [
 			{
-				sectionTitle: "Worked on stupid stuff",
+				sectionTitle: "Frontend experience",
 				sectionInfo:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium incidunt labore eligendi omnis soluta iste suscipit qui pariatur, possimus nisi earum ipsa vel molestiae itaque non necessitatibus fugit quis placeat.",
+					"Designed and developed multiple front-end features utilizng skills such as Scss, Javascript and React. I was in charge of fixing responsive/front problems.",
 			},
 			{
-				sectionTitle: "Worked on stupid stuff",
+				sectionTitle: "Backend experience",
 				sectionInfo:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium incidunt labore eligendi omnis soluta iste suscipit qui pariatur, possimus nisi earum ipsa vel molestiae itaque non necessitatibus fugit quis placeat.",
+					"Our products handle plenty of data, as a consequence I had to work on optimizing the system to make it more efficient using GraphQL, Sql, Rest API and more.",
 			},
 			{
-				sectionTitle: "Worked on stupid stuff",
+				sectionTitle: "Mentored new members",
 				sectionInfo:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium incidunt labore eligendi omnis soluta iste suscipit qui pariatur, possimus nisi earum ipsa vel molestiae itaque non necessitatibus fugit quis placeat.",
+					"I was in charge of mentoring new team members, In my mentoring section I had to organzie their tasks using Microsoft Teams, helped them to learn our products folder sturcture and I had to make sure that they understand the technologies that we work with.",
 			},
 		],
 	},
