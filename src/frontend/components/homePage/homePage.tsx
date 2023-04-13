@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function HomePage() {
 	return (
-		<div className={styles["home-page-container"]} id="home">
+		<section className={styles["home-page-container"]} id="home">
 			<div className={styles["background-container"]} />
 			<Navbar />
 			<div className={styles["main-content-container"]}>
@@ -32,6 +32,6 @@ export default function HomePage() {
 					<div className={styles["copyright-style"]}>© 2023 by Roie Hemo All rights reserved</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

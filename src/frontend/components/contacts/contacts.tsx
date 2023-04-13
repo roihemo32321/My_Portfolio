@@ -21,7 +21,7 @@ export default function Contacts() {
 	const socialAnimation = useElementOnScreen(socialRef);
 
 	return (
-		<div className={styles["contacts-container"]} id="contacts">
+		<section className={styles["contacts-container"]} id="contacts">
 			<div className={styles["background-container"]} />
 			<div className={styles["contacts-flex-container"]}>
 				<Error />
@@ -45,6 +45,6 @@ export default function Contacts() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

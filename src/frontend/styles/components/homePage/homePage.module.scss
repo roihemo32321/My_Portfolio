@@ -14,11 +14,11 @@
 		justify-content: space-between;
 		align-items: center;
 		.top-main-container {
-			width: 100%;
+			width: 80%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			gap: 9rem;
+			gap: 7.5rem;
 			.about-me-container {
 				display: flex;
 				flex-direction: column;
@@ -26,7 +26,9 @@
 			}
 			.laptop-style {
 				position: relative;
-				width: clamp(14rem, 10vw + 10rem, 30rem);
+				width: 100%;
+				min-width: 15rem;
+				max-width: 30rem;
 				aspect-ratio: 1.27/1;
 				.laptop-image {
 					filter: invert(0.8);
@@ -39,7 +41,7 @@
 					border-right: 2px solid rgba(255, 255, 255, 0.75);
 					white-space: nowrap;
 					overflow: hidden;
-					font-size: clamp(0.55rem, 0.5vw + 0.2rem, 1rem);
+					font-size: clamp(0.55rem, 1.5vw + 0.2rem, 0.8rem);
 					font-family: cascadia;
 					user-select: none;
 					animation: typing-animation 7s infinite linear;
@@ -124,7 +126,7 @@
 
 // Change the layout of the page.
 
-@media (width <= 992px) {
+@media (width <= 1024px) {
 	.home-page-container {
 		gap: min(3vh, 5rem);
 		padding: 1rem;

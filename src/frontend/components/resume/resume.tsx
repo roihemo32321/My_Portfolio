@@ -52,7 +52,7 @@ export default function Resume() {
 	const titleAnimation = useElementOnScreen(titleAnimationRef);
 
 	return (
-		<div className={styles["resume-container"]} id="resume">
+		<section className={styles["resume-container"]} id="resume">
 			<div className={styles["background-container"]} />
 			<div className={`${styles["title-style"]} ${titleAnimation ? styles["show-animation"] : ""}`} ref={titleAnimationRef}>
 				<span className={styles["my-span"]}>My</span>
@@ -63,6 +63,6 @@ export default function Resume() {
 					return <Experience mainTitle={val.mainTitle} subTitle={val.subTitle} resumeSections={val.resumeSections} key={val.mainTitle} />;
 				})}
 			</div>
-		</div>
+		</section>
 	);
 }

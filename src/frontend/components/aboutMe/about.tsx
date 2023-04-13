@@ -10,7 +10,7 @@ export default function About() {
 	const rightSideOnScreen = useElementOnScreen(rightSideRef);
 
 	return (
-		<div className={styles["about-container"]} id="aboutMe">
+		<section className={styles["about-container"]} id="aboutMe">
 			<div className={styles["background-container"]} />
 			<div className={`${styles["left-container"]} ${leftSideOnScreen ? styles["fade-right"] : ""}`} ref={leftSideRef}>
 				<div className={styles["titles-container"]}>
@@ -37,6 +37,6 @@ export default function About() {
 					<p>Besides being a developer I also love soccer, gaming, and hanging out with my friends.</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

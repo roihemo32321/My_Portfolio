@@ -51,7 +51,7 @@ export default function Skills() {
 	const softAnimationOnScreen = useElementOnScreen(softSkillAnimationRef);
 
 	return (
-		<div className={styles["skills-main-container"]} id="skills">
+		<section className={styles["skills-main-container"]} id="skills">
 			<div className={styles["background-container"]} />
 			<div className={styles["main-skills-container"]}>
 				<div className={`${styles["skills-title"]} ${mainAnimationOnScreen ? styles["show-animation"] : ""}`} ref={mainSkillanimationRef}>
@@ -75,6 +75,6 @@ export default function Skills() {
 					})}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

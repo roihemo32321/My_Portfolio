@@ -13,7 +13,7 @@ export default function FormContact() {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const contactEmail = useFormStore((store) => store.contactEmail);
 	const setErrorData = useErrorStore((store) => store.setError);
-	const animationRef = useRef<HTMLDivElement>(null);
+	const animationRef = useRef<HTMLFormElement>(null);
 	const leftAnimation = useElementOnScreen(animationRef);
 
 	const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -34,8 +34,13 @@ export default function FormContact() {
 	};
 
 	return (
-		<form className={styles["form-container"]} onSubmit={sendEmail} autoComplete="off">
-			<div className={`${styles["form-grid-container"]} ${leftAnimation ? styles["show-animation"] : ""}`} ref={animationRef}>
+		<form
+			className={`${styles["form-container"]}  ${leftAnimation ? styles["show-animation"] : ""}`}
+			onSubmit={sendEmail}
+			autoComplete="off"
+			ref={animationRef}
+		>
+			<div className={styles["form-grid-container"]}>
 				{inputsContainer.map((val) => (
 					<div key={val} className={styles[returnClassName(val)]}>
 						{val === "message" ? <TextareaInput placeholder={val} /> : <FormInput placeholder={val} formName={val} />}
