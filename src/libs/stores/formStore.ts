@@ -19,7 +19,7 @@ type Actions = {
 	reset: () => void;
 };
 
-export const useFormStore = create<formDataType & Actions>((set) => ({
+export const useFormStore = create<formDataType & Actions>((set, get) => ({
 	...initialState,
 	setEmail: (email: string) => set({ email }),
 	setName: (name: string) => set({ name }),
@@ -27,10 +27,10 @@ export const useFormStore = create<formDataType & Actions>((set) => ({
 	setMessage: (message: string) => set({ message }),
 	contactEmail: async () => {
 		const formData = {
-			email: useFormStore.getState().email,
-			name: useFormStore.getState().name,
-			subject: useFormStore.getState().subject,
-			message: useFormStore.getState().message,
+			email: get().email,
+			name: get().name,
+			subject: get().subject,
+			message: get().message,
 		};
 
 		const { error } = formSchema.validate(formData);
