@@ -17,8 +17,8 @@ export default function Experience({ mainTitle, subTitle, resumeSections }: Prop
 	return (
 		<div className={styles["experience-container"]}>
 			<div className={`${styles["titles-container"]} ${experienceAnimation ? styles["show-animation"] : ""}`} ref={experienceRef}>
-				<div className={styles["main-title"]}>{mainTitle}</div>
-				<div className={styles["sub-title"]}>{subTitle}</div>
+				<h1 className={styles["main-title"]}>{mainTitle}</h1>
+				<h2 className={styles["sub-title"]}>{subTitle}</h2>
 			</div>
 			<div className={styles["resume-sections"]}>
 				{resumeSections.map((val, index) => {

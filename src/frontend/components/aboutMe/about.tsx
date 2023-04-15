@@ -13,17 +13,17 @@ export default function About() {
 		<section className={styles["about-container"]} id="aboutMe">
 			<div className={styles["background-container"]} />
 			<div className={`${styles["left-container"]} ${leftSideOnScreen ? styles["fade-right"] : ""}`} ref={leftSideRef}>
-				<div className={styles["titles-container"]}>
-					<div className={styles["about-title"]}>About</div>
-					<div className={styles["me-title"]}>Me</div>
-				</div>
+				<header className={styles["titles-container"]}>
+					<h1 className={styles["about-title"]}>About</h1>
+					<h1 className={styles["me-title"]}>Me</h1>
+				</header>
 				<div className={styles["cv-download-container"]}>
 					<CVDownload />
 				</div>
 			</div>
 			<div className={styles["seperator-line"]} />
 			<div className={`${styles["right-container"]} ${rightSideOnScreen ? styles["fade-left"] : ""}`} ref={rightSideRef}>
-				<div className={styles["text-container"]}>
+				<article className={styles["text-container"]}>
 					<p>
 						Hello, my name is Roie Hemo, I am a Full Stack Developer at the Israel Defense Forces. I am working on different E2E websites with a
 						group of 7 full stack developers. Our products handle important data, and as a consequence, I had to work on optimizing the system to
@@ -35,7 +35,7 @@ export default function About() {
 						strives to develop impactful projects.
 					</p>
 					<p>Besides being a developer I also love soccer, gaming, and hanging out with my friends.</p>
-				</div>
+				</article>
 			</div>
 		</section>
 	);

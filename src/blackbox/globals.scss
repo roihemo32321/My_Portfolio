@@ -19,7 +19,6 @@
 		font-family: cascadia;
 		src: url("/static/fonts/Cascadia.ttf");
 	}
-
 	box-sizing: border-box;
 }
 
@@ -54,4 +53,11 @@ body {
 
 button {
 	cursor: pointer;
+}
+
+@media (width <= 1024px) {
+	*::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+	}
 }

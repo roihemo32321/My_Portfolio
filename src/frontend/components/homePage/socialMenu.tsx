@@ -13,7 +13,7 @@ const socialOptions = [
 export default function SocialMenu() {
 	return (
 		<div className={styles["main-socials-container"]}>
-			<div className={styles["title-style"]}>Find me on:</div>
+			<h1 className={styles["title-style"]}>Find me on:</h1>
 			<div className={styles["social-options"]}>
 				{socialOptions.map((val) => {
 					return (

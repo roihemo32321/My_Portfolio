@@ -30,6 +30,9 @@
 		gap: 4rem;
 		transform: translateX(-50%);
 		opacity: 0;
+		h1 {
+			margin: 0;
+		}
 		.titles-container {
 			display: flex;
 			flex-direction: column;

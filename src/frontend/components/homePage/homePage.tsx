@@ -28,9 +28,9 @@ export default function HomePage() {
 						</div>
 					</div>
 				</div>
-				<div className={styles["bottom-main-container"]}>
+				<footer className={styles["bottom-main-container"]}>
 					<div className={styles["copyright-style"]}>© 2023 by Roie Hemo All rights reserved</div>
-				</div>
+				</footer>
 			</div>
 		</section>
 	);

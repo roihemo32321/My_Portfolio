@@ -12,9 +12,9 @@ export default function ResumeSection({ sectionTitle, sectionInfo }: Props) {
 	const resumeAnimation = useElementOnScreen(resumeRef);
 
 	return (
-		<div className={`${styles["resume-section-container"]} ${resumeAnimation ? styles["resume-animation"] : ""}`} ref={resumeRef}>
-			<div className={styles["section-title"]}>{sectionTitle}</div>
-			<div className={styles["section-info"]}>{sectionInfo}</div>
-		</div>
+		<article className={`${styles["resume-section-container"]} ${resumeAnimation ? styles["resume-animation"] : ""}`} ref={resumeRef}>
+			<h1 className={styles["section-title"]}>{sectionTitle}</h1>
+			<p className={styles["section-info"]}>{sectionInfo}</p>
+		</article>
 	);
 }

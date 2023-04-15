@@ -14,14 +14,17 @@
 	.section-title {
 		width: fit-content;
 		font-family: sans-serif;
+		font-weight: normal;
 		font-size: clamp(1.25rem, 1vw + 0.5rem, 2rem);
 		color: white;
+		margin: 0;
 	}
 	.section-info {
 		width: fit-content;
 		font-family: sans-serif;
 		font-size: clamp(0.7rem, 1vw + 0.15rem, 0.9rem);
 		color: #d3d9e2;
+		margin: 0;
 	}
 	&:nth-child(1) {
 		transition-delay: 100ms;
