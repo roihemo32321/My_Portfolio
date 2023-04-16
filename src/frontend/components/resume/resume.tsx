@@ -11,16 +11,16 @@ const mainResumes = [
 			{
 				sectionTitle: "Computer Science",
 				sectionInfo:
-					"5 points of programming using C# and Assembly, We learned the basics of programming such as loops, conditions, etc. We also gained knowledge about data structure such as arrays, lists, binary trees and more.",
+					"5 units of programming using C# and Assembly, I learned the basics of programming such as loops, conditions, etc. I was also taught about data structure such as arrays, lists, binary trees and more.",
 			},
 			{
 				sectionTitle: "E2E Web Project",
 				sectionInfo:
-					"We had to make a 5 points web development project using C#, Asp.net, Sql, Css, Html and more. In the twelfth grade we had to present our project to an examiner from the Ministry of Education.",
+					"I had to make a 5 units web development project using C#, Asp.net, SQL, CSS, and HTML5. In the twelfth grade I had to present my project to an examiner from the Ministry of Education.",
 			},
 			{
 				sectionTitle: "Certificate of Excellence",
-				sectionInfo: "Recipient of Ministry of Education’s Certificate of Excellence.",
+				sectionInfo: "I am a recipient of the Ministry of Education’s Certificate of Excellence.",
 			},
 		],
 	},
@@ -31,17 +31,17 @@ const mainResumes = [
 			{
 				sectionTitle: "Frontend experience",
 				sectionInfo:
-					"Designed and developed multiple front-end features utilizng skills such as Scss, Javascript and React. I was in charge of fixing responsive/front problems.",
+					"I designed and developed multiple front-end features utilizng skills such as Scss, Javascript and React. I was in charge of fixing front problems and improving responsivity.",
 			},
 			{
 				sectionTitle: "Backend experience",
 				sectionInfo:
-					"Our products handle plenty of data, as a consequence I had to work on optimizing the system to make it more efficient using GraphQL, Sql, Rest API and more.",
+					"Our products handle plenty of data, as such I optimizied the system to make it more efficient using GraphQL, SQL, Rest API, and more.",
 			},
 			{
 				sectionTitle: "Mentored new members",
 				sectionInfo:
-					"I was in charge of mentoring new team members, In my mentoring section I had to organzie their tasks using Microsoft Teams, helped them to learn our products folder sturcture and I had to make sure that they understand the technologies that we work with.",
+					"I was in charge of mentoring new team members. In my mentoring section I organized their tasks using Microsoft Teams, gave them personal and professional challanges to imporve their skills, and I made sure that they understand the technologies that we work with.",
 			},
 		],
 	},

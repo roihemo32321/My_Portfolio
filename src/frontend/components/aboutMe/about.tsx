@@ -22,14 +22,12 @@ export default function About() {
 				<article className={styles["text-container"]}>
 					<p>
 						Hello, my name is Roie Hemo, I am a Full Stack Developer at the Israel Defense Forces. I am working on different E2E websites with a
-						group of 7 full stack developers. Our products handle important data, and as a consequence, I had to work on optimizing the system to
-						make it more efficient.
+						group of 7 full stack developers. Our products handle important data, and as a result, I had to work on system optimization.
 					</p>
 					<br />
 					<p>
-						I am close to finishing my military service in 4 months and am excited to start a new challenge as a Full Stack Developer. In my
-						everyday work, I enjoy studying technologies and deepening my specializations. I love writing code and being part of a group that
-						strives to develop impactful projects.
+						I am close to finishing my military service and am excited to start a new professional challenge. In my everyday work I enjoy studying
+						technologies and deepening my specializations. I love writing code and being part of a group that strives to develop impactful projects.
 					</p>
 					<br />
 					<p>Besides being a developer I also love soccer, gaming, and hanging out with my friends.</p>
