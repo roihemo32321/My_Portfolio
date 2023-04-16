@@ -21,16 +21,15 @@ export default function About() {
 			<div className={`${styles["right-container"]} ${rightSideOnScreen ? styles["fade-left"] : ""}`} ref={rightSideRef}>
 				<article className={styles["text-container"]}>
 					<p>
-						Hello, my name is Roie Hemo, I am a Full Stack Developer at the Israel Defense Forces. I am working on different E2E websites with a
-						group of 7 full stack developers. Our products handle important data, and as a result, I had to work on system optimization.
+						Hello, my name is Roie Hemo, I am a Full Stack Developer at the Israel Defense Forces. I am working on E2E websites with a group of 7
+						full stack developers. Our products handle sensetive data, and as a result, I had to work on system optimizations.
 					</p>
 					<br />
 					<p>
 						I am close to finishing my military service and am excited to start a new professional challenge. In my everyday work I enjoy studying
-						technologies and deepening my specializations. I love writing code and being part of a group that strives to develop impactful projects.
+						technologies and deepening my specialties. I love writing code and being part of a group that strives to develop impactful projects.
 					</p>
 					<br />
-					<p>Besides being a developer I also love soccer, gaming, and hanging out with my friends.</p>
 				</article>
 			</div>
 		</section>

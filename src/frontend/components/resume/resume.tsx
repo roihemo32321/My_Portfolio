@@ -11,7 +11,7 @@ const mainResumes = [
 			{
 				sectionTitle: "Computer Science",
 				sectionInfo:
-					"5 units of programming using C# and Assembly, I learned the basics of programming such as loops, conditions, etc. I was also taught about data structure such as arrays, lists, binary trees and more.",
+					"5 units of programming using C# and Assembly, I learned the basics of programming such as loops, conditions, etc. I also learned about data structure such as arrays, lists, binary trees and more.",
 			},
 			{
 				sectionTitle: "E2E Web Project",
@@ -31,7 +31,7 @@ const mainResumes = [
 			{
 				sectionTitle: "Frontend experience",
 				sectionInfo:
-					"I designed and developed multiple front-end features utilizng skills such as Scss, Javascript and React. I was in charge of fixing front problems and improving responsivity.",
+					"I designed and developed multiple front-end features utilizng tools such as SCSS, Javascript and React. I was responsible of maintaining high quality and responsive code.",
 			},
 			{
 				sectionTitle: "Backend experience",
@@ -41,7 +41,7 @@ const mainResumes = [
 			{
 				sectionTitle: "Mentored new members",
 				sectionInfo:
-					"I was in charge of mentoring new team members. In my mentoring section I organized their tasks using Microsoft Teams, gave them personal and professional challanges to imporve their skills, and I made sure that they understand the technologies that we work with.",
+					"I was in charge of mentoring new team members which meant getting them up to speed and organizing the mentorship plan. I also made sure that they understand the technologies that we work with.",
 			},
 		],
 	},
