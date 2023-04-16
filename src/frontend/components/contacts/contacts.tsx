@@ -1,6 +1,5 @@
 import styles from "../../styles/components/contacts/contacts.module.scss";
 import GitHubIcon from "@/sharedSvgs/github";
-import TwitterIcon from "@/sharedSvgs/twitter";
 import LinkedinIcon from "@/sharedSvgs/linkedin";
 import SingleSocialLink from "./singleSocialLink";
 import FormContact from "./formContact";
@@ -9,9 +8,8 @@ import { useRef } from "react";
 import useElementOnScreen from "@/shared/libs/hooks/useElementOnScreen";
 
 const socialArray = [
-	{ title: "Linkedin", svg: <LinkedinIcon /> },
-	{ title: "GitHub", svg: <GitHubIcon /> },
-	{ title: "Twitter", svg: <TwitterIcon /> },
+	{ title: "Linkedin", svg: <LinkedinIcon />, link: "https://www.linkedin.com/in/roie-hemo/" },
+	{ title: "GitHub", svg: <GitHubIcon />, link: "https://github.com/roihemo32321" },
 ];
 
 export default function Contacts() {
@@ -38,7 +36,7 @@ export default function Contacts() {
 							<div className={styles["title-container"]}>Let&apos;s get in touch:</div>
 							<div className={styles["social-links"]}>
 								{socialArray.map((val) => (
-									<SingleSocialLink key={val.title} link={val.title} title={val.title} svg={val.svg} />
+									<SingleSocialLink key={val.title} link={val.link} title={val.title} svg={val.svg} />
 								))}
 							</div>
 						</div>

@@ -5,20 +5,8 @@
 *,
 *::before,
 *::after {
-	@font-face {
-		font-family: shareTechMono;
-		src: url("/static/fonts/ShareTechMono-Regular.ttf");
-	}
-
-	@font-face {
-		font-family: RoadRadioBold;
-		src: url("/static/fonts/RoadRadio\ Bold.ttf");
-	}
-
-	@font-face {
-		font-family: cascadia;
-		src: url("/static/fonts/Cascadia.ttf");
-	}
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -32,7 +20,6 @@
 	border: 4px solid transparent;
 	background-clip: content-box;
 	background-color: var(--primaryColor);
-	border-radius: 10px;
 }
 
 img {
@@ -42,13 +29,10 @@ img {
 html,
 body,
 #__next {
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	margin: 0px;
-	padding: 0px;
+	width: 100vw;
+	width: 100svw;
+	height: 100vh;
+	height: 100svh;
 }
 
 button {
@@ -60,4 +44,24 @@ button {
 		width: 0px;
 		background: transparent;
 	}
+}
+
+@font-face {
+	font-family: shareTechMono;
+	src: url("/static/fonts/ShareTechMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: RoadRadioBold;
+	src: url("/static/fonts/RoadRadio\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: cascadia;
+	src: url("/static/fonts/Cascadia.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: RobotoCondensed;
+	src: url("/static/fonts/RobotoCondensed-Regular.ttf") format("truetype");
 }

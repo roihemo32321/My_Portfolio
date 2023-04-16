@@ -30,9 +30,7 @@
 		gap: 4rem;
 		transform: translateX(-50%);
 		opacity: 0;
-		h1 {
-			margin: 0;
-		}
+
 		.titles-container {
 			display: flex;
 			flex-direction: column;
@@ -51,12 +49,6 @@
 				text-shadow: 3px 3px #580f5860;
 			}
 		}
-		.cv-download-container {
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
 	}
 
 	.seperator-line {
@@ -72,9 +64,10 @@
 		opacity: 0;
 		.text-container {
 			p {
-				font-family: sans-serif;
+				font-family: RobotoCondensed;
 				font-size: clamp(0.95rem, 0.6vw + 0.5rem, 1.3rem);
 				color: black;
+				line-height: 1.4;
 			}
 		}
 	}
