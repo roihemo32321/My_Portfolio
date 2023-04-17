@@ -48,7 +48,3 @@ pnpm dev
 Roie Hemo, feel free to view my linkedin profile.
 
 ex. [@Linkedin](https://www.linkedin.com/in/roie-hemo/)
-
-## License
-
-This project is licensed under the [Roie Hemo] License - see the LICENSE.md file for details
