@@ -43,36 +43,12 @@ pnpm dev
 
 ```
 
-code blocks for commands
-
-```
-
-## Help
-
-Any advise for common problems or issues.
-
-```
-
 ## Authors
 
 Roie Hemo, feel free to view my linkedin profile.
 
 ex. [@Linkedin](https://www.linkedin.com/in/roie-hemo/)
 
-## Version History
-
--   0.2
-    -   Various bug fixes and optimizations
-    -   See [commit change]() or See [release history]()
--   0.1
-    -   Initial Release
-
 ## License
 
 This project is licensed under the [Roie Hemo] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-```
-
-```
