@@ -37,7 +37,7 @@
 			.about-title,
 			.me-title {
 				font-family: RoadRadioBold;
-				font-size: clamp(3.1rem, 7vw + 1rem, 7rem); // Use clamp for headers and more.
+				font-size: clamp(3.15rem, 12.5vw + 1rem, 7rem); // Use clamp for headers and more.
 			}
 			.about-title {
 				color: black;
@@ -65,7 +65,7 @@
 		.text-container {
 			p {
 				font-family: RobotoCondensed;
-				font-size: clamp(0.95rem, 0.6vw + 0.5rem, 1.3rem);
+				font-size: clamp(1.2rem, 0.6vw + 0.5rem, 1.5rem);
 				color: black;
 				line-height: 1.4;
 			}
@@ -90,8 +90,9 @@
 
 @media (width <= 992px) {
 	.about-container {
+		justify-content: flex-start;
 		flex-direction: column;
-		gap: min(2.5rem, 5vh);
+		gap: min(2.5rem, 8vh);
 		.left-container {
 			width: 70%;
 			gap: min(2rem, 5vh);
