@@ -5,8 +5,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
-	padding: 2rem;
+	gap: var(--gapContainer);
+	padding: var(--paddingPage);
 	.background-container {
 		width: 100%;
 		height: 100%;
