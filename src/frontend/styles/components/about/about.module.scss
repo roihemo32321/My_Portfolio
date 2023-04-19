@@ -37,7 +37,7 @@
 			.about-title,
 			.me-title {
 				font-family: RoadRadioBold;
-				font-size: clamp(3.15rem, 12.5vw + 1rem, 7rem); // Use clamp for headers and more.
+				font-size: var(--pageTitle); // Use clamp for headers and more.
 			}
 			.about-title {
 				color: black;

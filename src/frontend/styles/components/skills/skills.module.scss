@@ -34,7 +34,7 @@
 		.skills-title {
 			display: flex;
 			gap: 1.25rem;
-			font-size: clamp(2.25rem, 4vw + 1rem, 5rem);
+			font-size: var(--pageTitle);
 			color: white;
 			font-family: RoadRadioBold;
 			@include animations.hideAnimationLeft;
@@ -69,7 +69,7 @@
 		.soft-title {
 			display: flex;
 			gap: 1.25rem;
-			font-size: clamp(2.25rem, 4vw + 1rem, 5rem);
+			font-size: var(--pageTitle);
 			color: white;
 			font-family: RoadRadioBold;
 			opacity: 0;

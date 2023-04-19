@@ -2,6 +2,7 @@
 	--primaryColor: #9e2a9e;
 	--paddingPage: 2rem;
 	--gapContainer: 1rem;
+	--pageTitle: clamp(2.25rem, 4vw + 1rem, 5rem);
 }
 
 *,
@@ -62,4 +63,10 @@ button {
 @font-face {
 	font-family: RobotoCondensed;
 	src: url("/static/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
+@media (width <= 992px) {
+	:root {
+		--paddingPage: 1rem;
+	}
 }
