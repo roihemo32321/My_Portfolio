@@ -17,6 +17,8 @@ export default function Contacts() {
 	const titleAnimation = useElementOnScreen(mainTitleRef);
 	const socialRef = useRef<HTMLDivElement>(null);
 	const socialAnimation = useElementOnScreen(socialRef);
+	const copyrightRef = useRef<HTMLDivElement>(null);
+	const copyrightAnimation = useElementOnScreen(socialRef);
 
 	return (
 		<section className={styles["contacts-container"]} id="contacts">
@@ -40,7 +42,9 @@ export default function Contacts() {
 								))}
 							</div>
 						</div>
-						<div className={styles["copyright-style"]}>© 2023 by Roie Hemo All rights reserved</div>
+						<div className={`${styles["copyright-style"]} ${copyrightAnimation ? styles["show-copyright"] : ""}`} ref={copyrightRef}>
+							© 2023 by Roie Hemo All rights reserved
+						</div>
 					</footer>
 				</div>
 			</div>
