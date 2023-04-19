@@ -3,81 +3,68 @@
 	height: 100%;
 	display: grid;
 	grid-template-rows: 1fr 20fr;
-	gap: 6rem;
 	position: relative;
 	padding: var(--paddingPage);
 	.main-content-container {
 		width: 100%;
 		height: 100%;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-		.top-main-container {
-			width: 80%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 7.5rem;
-			.about-me-container {
-				display: flex;
-				flex-direction: column;
-				gap: 2rem;
-			}
-			.laptop-style {
-				position: relative;
-				width: 100%;
-				min-width: 15rem;
-				max-width: 30rem;
-				aspect-ratio: 1.27/1;
-				.laptop-image {
-					filter: invert(0.8);
-				}
-				.line-container {
-					position: absolute;
-					top: 8%;
-					left: 18%;
-					color: white;
-					border-right: 2px solid rgba(255, 255, 255, 0.75);
-					white-space: nowrap;
-					overflow: hidden;
-					font-size: clamp(0.55rem, 1.5vw + 0.2rem, 0.8rem);
-					font-family: cascadia;
-					user-select: none;
-					animation: typing-animation 7s infinite linear;
+		gap: 10rem;
 
-					.blue-span {
-						color: #9cdcfe;
-					}
-
-					.white-span {
-						color: #d4d4d4;
-					}
-
-					.purple-span {
-						color: #da70d6;
-					}
-
-					.orange-span {
-						color: #ce9178;
-					}
-
-					.yellow-span {
-						color: #dcdcaa;
-					}
-				}
-			}
-		}
-
-		.bottom-main-container {
+		.about-me-container {
+			width: fit-content;
+			height: fit-content;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
-			gap: 1.5rem;
-			.copyright-style {
-				font-size: 0.9rem;
+			gap: 2rem;
+		}
+
+		.laptop-style {
+			position: relative;
+			width: 80%;
+			height: fit-content;
+			min-width: 15rem;
+			max-width: 35rem;
+			aspect-ratio: 1.27/1;
+
+			.laptop-image {
+				filter: invert(0.8);
+			}
+
+			.line-container {
+				position: absolute;
+				top: 8%;
+				left: 18%;
 				color: white;
-				font-family: RoadRadioBold;
+				border-right: 2px solid rgba(255, 255, 255, 0.75);
+				white-space: nowrap;
+				overflow: hidden;
+				font-size: clamp(0.6rem, 1.5vw + 0.2rem, 1.1rem);
+				font-family: cascadia;
+				user-select: none;
+				animation: typing-animation 7s infinite linear;
+
+				.blue-span {
+					color: #9cdcfe;
+				}
+
+				.white-span {
+					color: #d4d4d4;
+				}
+
+				.purple-span {
+					color: #da70d6;
+				}
+
+				.orange-span {
+					color: #ce9178;
+				}
+
+				.yellow-span {
+					color: #dcdcaa;
+				}
 			}
 		}
 	}
@@ -88,6 +75,7 @@
 		background-image: url("/static/images/homePage.webp");
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
 		filter: brightness(0.75);
 		position: absolute;
 		top: 0;
@@ -126,23 +114,17 @@
 
 // Change the layout of the page.
 
-@media (width <= 1024px) {
+@media (width <= 992px) {
 	.home-page-container {
-		gap: min(3vh, 5rem);
 		padding: 1rem;
 		.main-content-container {
-			.top-main-container {
+			height: 95%;
+			flex-direction: column;
+			gap: 2rem;
+			.about-me-container {
 				flex-direction: column;
 				align-items: center;
-				gap: min(8vh, 5rem);
-				.about-me-container {
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-				}
-			}
-			.bottom-main-container {
-				display: none;
+				justify-content: center;
 			}
 		}
 	}

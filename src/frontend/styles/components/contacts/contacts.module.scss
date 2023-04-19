@@ -57,11 +57,12 @@
 				justify-content: center;
 			}
 
-			.main-social-container {
+			.main-footer-container {
 				width: 100%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				gap: 2rem;
 				.social-links-container {
 					display: flex;
 					align-items: center;
@@ -79,6 +80,12 @@
 						justify-content: center;
 						gap: 1rem;
 					}
+				}
+
+				.copyright-style {
+					font-size: 0.9rem;
+					color: white;
+					font-family: RoadRadioBold;
 				}
 
 				.social-animation {
@@ -100,7 +107,8 @@
 		.contacts-flex-container {
 			.main-flex-box {
 				gap: clamp(1.5rem, 1vh + 0.5rem, 2.5rem);
-				.main-social-container {
+				.main-footer-container {
+					flex-direction: column;
 					.social-links-container {
 						.title-container {
 							display: none;

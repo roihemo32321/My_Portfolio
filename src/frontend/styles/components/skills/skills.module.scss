@@ -30,6 +30,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: var(--gapContainer);
+
 		.skills-title {
 			display: flex;
 			gap: 1.25rem;
@@ -42,9 +43,11 @@
 				text-shadow: 3px 3px #580f5860;
 			}
 		}
+
 		.show-animation {
 			@include animations.showAnimation;
 		}
+
 		.skills-container {
 			width: 30%;
 			min-width: 16rem;
@@ -77,12 +80,14 @@
 				text-shadow: 3px 3px #580f5860;
 			}
 		}
+
 		.title-animation {
 			opacity: 1;
 			transform: translateX(0);
 			filter: blur(0);
 			transition: all 500ms;
 		}
+
 		.skills-container {
 			width: 55%;
 			min-width: 16rem;

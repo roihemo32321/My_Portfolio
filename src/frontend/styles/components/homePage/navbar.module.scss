@@ -4,6 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
+
 	.menu-icon {
 		width: fit-content;
 		height: fit-content;
@@ -15,6 +16,7 @@
 		right: 0.5rem;
 		display: none;
 		cursor: pointer;
+
 		.menu-btn-burger {
 			width: 1.5rem;
 			height: 3px;
@@ -59,9 +61,10 @@
 			}
 		}
 	}
+
 	.nav-options-container {
 		display: flex;
-		gap: 7rem;
+		gap: 10rem;
 		.link-style {
 			font-family: shareTechMono;
 			font-size: clamp(1.1rem, 1vw + 0.25rem, 1.3rem);
@@ -95,7 +98,7 @@
 
 // Changing layout of navbar.
 
-@media (width <= 1024px) {
+@media (width <= 992px) {
 	.navbar-container {
 		z-index: 1000;
 		.nav-options-container {
