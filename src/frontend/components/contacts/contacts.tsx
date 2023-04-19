@@ -19,19 +19,20 @@ export default function Contacts() {
 	const socialAnimation = useElementOnScreen(socialRef);
 	const copyrightRef = useRef<HTMLDivElement>(null);
 	const copyrightAnimation = useElementOnScreen(socialRef);
+	const errorRef = useRef<HTMLDivElement>(null); // errorRef to make a scrollIntoView after we hit the submit.
 
 	return (
 		<section className={styles["contacts-container"]} id="contacts">
 			<div className={styles["background-container"]} />
 			<div className={styles["contacts-flex-container"]}>
-				<Error />
+				<Error errorRef={errorRef} />
 				<div className={`${styles["main-title-container"]} ${titleAnimation ? styles["show-animation"] : ""}`} ref={mainTitleRef}>
 					<span className={styles["contact-span"]}>Contact</span>
 					<span className={styles["me-span"]}>Me</span>
 				</div>
 				<div className={styles["main-flex-box"]}>
 					<div className={styles["email-contact"]}>
-						<FormContact />
+						<FormContact errorRef={errorRef} />
 					</div>
 					<footer className={styles["main-footer-container"]}>
 						<div className={`${styles["social-links-container"]} ${socialAnimation ? styles["social-animation"] : ""}`} ref={socialRef}>

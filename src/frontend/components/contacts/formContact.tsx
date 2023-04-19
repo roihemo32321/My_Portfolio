@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { RefObject, useRef, useState } from "react";
 import styles from "../../styles/components/contacts/formContact.module.scss";
 import FormInput from "./formInput";
 import TextareaInput from "./textareaInput";
@@ -9,7 +9,11 @@ import useElementOnScreen from "@/shared/libs/hooks/useElementOnScreen";
 
 const inputsContainer = ["name", "email", "subject", "message"];
 
-export default function FormContact() {
+type Props = {
+	errorRef: RefObject<HTMLDivElement>;
+};
+
+export default function FormContact({ errorRef }: Props) {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const contactEmail = useFormStore((store) => store.contactEmail);
 	const setErrorData = useErrorStore((store) => store.setError);
@@ -24,6 +28,7 @@ export default function FormContact() {
 
 		if (error) {
 			setErrorData(error);
+			errorRef.current?.scrollIntoView({ behavior: "smooth" }); // Scrolling into view after hitting a submit button.
 			return;
 		}
 	};
