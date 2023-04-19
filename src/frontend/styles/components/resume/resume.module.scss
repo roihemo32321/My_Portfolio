@@ -54,6 +54,10 @@
 @media (width <= 992px) {
 	.resume-container {
 		height: fit-content;
+		.background-container {
+			background-attachment: initial;
+		}
+
 		.resume-grid-container {
 			width: 100%;
 			grid-template-rows: 1fr 1fr;

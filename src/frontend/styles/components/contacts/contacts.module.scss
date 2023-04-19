@@ -112,6 +112,10 @@
 
 @media (width <= 992px) {
 	.contacts-container {
+		.background-container {
+			background-attachment: initial;
+		}
+
 		.contacts-flex-container {
 			.main-flex-box {
 				gap: clamp(1.5rem, 1vh + 0.5rem, 2.5rem);

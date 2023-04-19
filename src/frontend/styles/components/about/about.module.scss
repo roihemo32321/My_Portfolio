@@ -93,6 +93,10 @@
 		justify-content: flex-start;
 		flex-direction: column;
 		gap: min(2.5rem, 8vh);
+		.background-container {
+			background-attachment: initial;
+		}
+
 		.left-container {
 			width: 70%;
 			gap: min(2rem, 5vh);

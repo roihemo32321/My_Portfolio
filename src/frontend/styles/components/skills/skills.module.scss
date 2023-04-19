@@ -102,5 +102,8 @@
 @media (width <= 1400px) {
 	.skills-main-container {
 		height: fit-content;
+		.background-container {
+			background-attachment: initial;
+		}
 	}
 }

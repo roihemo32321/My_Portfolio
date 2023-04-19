@@ -117,6 +117,10 @@
 @media (width <= 992px) {
 	.home-page-container {
 		padding: 1rem;
+		.background-container {
+			background-attachment: initial;
+		}
+
 		.main-content-container {
 			height: 95%;
 			flex-direction: column;
