@@ -57,7 +57,7 @@
 		background-color: #000;
 	}
 
-	&:hover:not(:active) {
+	&:hover {
 		.title-style {
 			visibility: visible;
 			opacity: 1;
