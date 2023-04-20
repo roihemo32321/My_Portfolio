@@ -51,9 +51,14 @@
 	}
 }
 
-@media (width <= 992px) {
+@media (width <= 1400px) {
 	.resume-container {
 		height: fit-content;
+	}
+}
+
+@media (width <= 992px) {
+	.resume-container {
 		.background-container {
 			background-attachment: initial;
 		}
