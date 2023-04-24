@@ -134,7 +134,9 @@
 	}
 }
 
-@media (orientation: landscape) {
+// landscape mobile devices
+
+@media (width <= 992px) and (orientation: landscape) {
 	.home-page-container {
 		height: fit-content;
 	}
