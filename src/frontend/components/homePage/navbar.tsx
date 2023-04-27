@@ -32,7 +32,7 @@ export default function Navbar() {
 	return (
 		<header className={styles["navbar-container"]}>
 			<label className={styles["hamburger-menu"]}>
-				<input type="checkbox" checked={closeMenu} onClick={() => setCloseMenu(!closeMenu)} />
+				<input type="checkbox" checked={closeMenu} onChange={() => setCloseMenu(!closeMenu)} aria-label="hamburger" />
 			</label>
 
 			<nav className={styles["nav-options-container"]}>
