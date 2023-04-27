@@ -7,6 +7,17 @@
 	text-decoration: none;
 	gap: 0.75rem;
 	position: relative;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	&:focus {
+		outline: none !important;
+	}
 
 	.title-style {
 		position: absolute;

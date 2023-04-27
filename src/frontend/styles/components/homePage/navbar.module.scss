@@ -26,6 +26,17 @@ $animation-timing: 500ms ease-in-out;
 		right: $hamburger-right;
 		cursor: pointer;
 		z-index: 2;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		&:focus {
+			outline: none !important;
+		}
 
 		// Creating three lines to make an hamburger icon.
 		&::before,
@@ -145,10 +156,6 @@ $animation-timing: 500ms ease-in-out;
 				}
 				&:nth-child(5) {
 					transition-delay: 450ms;
-				}
-
-				&:active {
-					color: red;
 				}
 			}
 		}
