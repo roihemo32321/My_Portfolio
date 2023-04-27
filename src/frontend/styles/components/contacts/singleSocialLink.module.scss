@@ -56,8 +56,19 @@
 	.GitHub-title-background::before {
 		background-color: #000;
 	}
+}
 
-	&:hover {
+@media (width <= 992px) {
+	.social-link-style {
+		.title-style {
+			display: none;
+		}
+	}
+}
+
+// To avoid hover animations on mobile devices.
+@media (hover: hover) {
+	.social-link-style:hover {
 		.title-style {
 			visibility: visible;
 			opacity: 1;
@@ -77,14 +88,6 @@
 		.GitHub-title-background,
 		.GitHub-svg-background {
 			background-color: #000;
-		}
-	}
-}
-
-@media (width <= 992px) {
-	.social-link-style {
-		.title-style {
-			display: none;
 		}
 	}
 }
