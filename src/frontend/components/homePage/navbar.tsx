@@ -27,33 +27,29 @@ const navOptions = [
 ];
 
 export default function Navbar() {
-	const [responsiveNav, setResponsiveNav] = useState<boolean>(false);
+	const [closeMenu, setCloseMenu] = useState<boolean>(false);
 
 	return (
 		<header className={styles["navbar-container"]}>
-			<nav className={`${styles["nav-options-container"]} ${responsiveNav ? styles["show-responsive-nav"] : ""}`}>
+			<label className={styles["hamburger-menu"]}>
+				<input type="checkbox" checked={closeMenu} onClick={() => setCloseMenu(!closeMenu)} />
+			</label>
+
+			<nav className={styles["nav-options-container"]}>
 				{navOptions.map((val) => {
 					return (
 						<Link
 							className={styles["link-style"]}
 							key={val.title}
 							href={`/#${val.link}`}
-							onClick={() => {
-								if (responsiveNav) {
-									setResponsiveNav(false);
-								}
-							}}
 							aria-label={`move_${val.title}`}
+							onClick={() => setCloseMenu(false)}
 						>
 							{val.title}
 						</Link>
 					);
 				})}
 			</nav>
-
-			<div className={styles["menu-icon"]} onClick={() => setResponsiveNav(!responsiveNav)}>
-				<div className={`${styles["menu-btn-burger"]} ${responsiveNav ? styles["close-icon"] : ""}`} />
-			</div>
 		</header>
 	);
 }

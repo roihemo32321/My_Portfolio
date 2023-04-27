@@ -1,3 +1,5 @@
+$animation-timing: 500ms ease-in-out;
+
 .navbar-container {
 	width: 100%;
 	display: flex;
@@ -5,59 +7,68 @@
 	justify-content: center;
 	position: relative;
 
-	.menu-icon {
+	.hamburger-menu {
+		// Hamburger-variables
+		$bar-width: 30px;
+		$bar-height: 3px;
+		$hamburger-gap: 6px;
+		$hamburger-foreground: white;
+		$hamburger-background: var(--primaryColor);
+		$hamburger-right: 0.5rem;
+		$hamburger-height: calc($bar-height * 3 + $hamburger-gap * 2);
+		$x-width: calc($hamburger-height * 1.41421356237); // math calculating to get the width of the x.
+
 		width: fit-content;
-		height: fit-content;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: white;
-		position: absolute;
-		right: 0.5rem;
 		display: none;
+		flex-direction: column;
+		gap: $hamburger-gap;
+		position: absolute;
+		right: $hamburger-right;
 		cursor: pointer;
+		z-index: 2;
 
-		.menu-btn-burger {
-			width: 1.5rem;
-			height: 3px;
-			background-color: white;
-			box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-			border-radius: 5px;
-			transition: all 0.5s ease-in-out;
-			cursor: pointer;
+		// Creating three lines to make an hamburger icon.
+		&::before,
+		&::after,
+		input {
+			content: "";
+			width: $bar-width;
+			height: $bar-height;
+			background-color: $hamburger-foreground;
+			border-radius: 9999px;
+			transition: opacity $animation-timing, width $animation-timing, rotate $animation-timing, translate $animation-timing,
+				background-color $animation-timing;
+			transform-origin: left center; // Setting transform-origin to left center to make an x symbol.
+		}
 
-			// Using before and after to make two more lines for the burger icon.
-			&::before,
-			&::after {
-				content: "";
-				position: absolute;
-				width: 1.5rem;
-				height: 3px;
-				background: #fff;
-				border-radius: 5px;
-				box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-				transition: all 0.5s ease-in-out;
-				cursor: pointer;
-			}
+		input {
+			appearance: none;
+			outline: none;
+			pointer-events: none;
 
-			&::before {
-				transform: translateY(-0.5rem); // Making a gap between each line.
-			}
-			&::after {
-				transform: translateY(0.5rem); // Making a gap between each line.
+			&:checked {
+				opacity: 0;
+				width: 0;
 			}
 		}
 
-		/* ANIMATION */
-		.close-icon {
-			transform: translateX(-50px);
-			background: transparent;
-			box-shadow: none;
-			&::before {
-				transform: rotate(45deg) translate(35px, -35px); // Animation to make the x symbol.
-			}
-			&::after {
-				transform: rotate(-45deg) translate(35px, 35px); // Animation to make the x symbol.
+		&:has(input:checked)::before {
+			rotate: 45deg;
+			width: $x-width;
+			translate: 0 calc($bar-height / -2);
+		}
+
+		&:has(input:checked)::after {
+			rotate: -45deg;
+			width: $x-width;
+			translate: 0 calc($bar-height / 2);
+		}
+
+		// Checking if we have a checked input, If yes we are selecting te nav and moving it to view.
+		&:has(input:checked) + nav {
+			right: 0;
+			.link-style {
+				transform: translateX(0);
 			}
 		}
 	}
@@ -101,6 +112,10 @@
 @media (width <= 992px) {
 	.navbar-container {
 		z-index: 1000;
+		.hamburger-menu {
+			display: flex;
+		}
+
 		.nav-options-container {
 			flex-direction: column;
 			justify-content: center;
@@ -114,10 +129,11 @@
 			background: rgb(43, 43, 43);
 			justify-content: space-evenly;
 			gap: 0;
-			transition: all 500ms ease-in-out;
+			transition: all $animation-timing;
+
 			.link-style {
 				transform: translateX(40rem);
-				transition: transform 500ms;
+				transition: transform $animation-timing;
 				&:nth-child(2) {
 					transition-delay: 150ms;
 				}
@@ -130,18 +146,11 @@
 				&:nth-child(5) {
 					transition-delay: 450ms;
 				}
-			}
-		}
 
-		.show-responsive-nav {
-			transform: translateX(-100%);
-
-			.link-style {
-				transform: translateX(0);
+				&:active {
+					color: red;
+				}
 			}
-		}
-		.menu-icon {
-			display: block;
 		}
 	}
 }
