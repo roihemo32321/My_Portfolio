@@ -86,7 +86,7 @@ $animation-timing: 500ms ease-in-out;
 
 	.nav-options-container {
 		display: flex;
-		gap: 10rem;
+		gap: 8rem;
 		.link-style {
 			font-family: shareTechMono;
 			font-size: clamp(1.1rem, 1vw + 0.25rem, 1.3rem);
@@ -115,6 +115,15 @@ $animation-timing: 500ms ease-in-out;
 				background-color: white;
 			}
 		}
+	}
+
+	.main-icon {
+		$position-left: 0.5rem;
+
+		position: absolute;
+		user-select: none;
+		left: $position-left;
+		height: 100%;
 	}
 }
 

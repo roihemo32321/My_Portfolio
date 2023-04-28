@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../../styles/components/homePage/navbar.module.scss";
 import { useState } from "react";
+import HemoIcon from "@/shared/components/svgs/rh";
 
 const navOptions = [
 	{
@@ -50,6 +51,8 @@ export default function Navbar() {
 					);
 				})}
 			</nav>
+
+			<HemoIcon className={styles["main-icon"]} />
 		</header>
 	);
 }
