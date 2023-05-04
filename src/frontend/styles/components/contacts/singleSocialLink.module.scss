@@ -15,34 +15,6 @@
 	-ms-user-select: none;
 	user-select: none;
 
-	&:focus {
-		outline: none !important;
-	}
-
-	&:hover,
-	&:focus-visible {
-		.title-style {
-			visibility: visible;
-			opacity: 1;
-			transform: translateY(-4.5rem);
-			color: white;
-		}
-		.svg-style {
-			color: white;
-		}
-
-		.Linkedin-title-background,
-		.Linkedin-svg-background,
-		.Linkedin-title-background::before {
-			background-color: #0077b5;
-		}
-
-		.GitHub-title-background,
-		.GitHub-svg-background {
-			background-color: #000;
-		}
-	}
-
 	.title-style {
 		position: absolute;
 		color: black;
@@ -97,6 +69,35 @@
 	.social-link-style {
 		.title-style {
 			display: none;
+		}
+	}
+}
+
+@media (hover: hover) {
+	.social-link-style:hover,
+	.social-link-style:focus-visible {
+		.title-style {
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(-4.5rem);
+			color: white;
+		}
+
+		.svg-container {
+			.svg-style {
+				color: white;
+			}
+		}
+
+		.Linkedin-title-background,
+		.Linkedin-svg-background,
+		.Linkedin-title-background::before {
+			background-color: #0077b5;
+		}
+
+		.GitHub-title-background,
+		.GitHub-svg-background {
+			background-color: #000;
 		}
 	}
 }
